@@ -161,6 +161,10 @@ h3 {
   padding-top: 1em;
 }
 
+.inDiv {
+  text-decoration: none;
+}
+
 /* Generic rules end */
 
 /* about Section start */
@@ -289,7 +293,7 @@ h3 {
 }
 
 .study {
-  background-color: var(--accent);
+  background-color: oklch(90.07% 0.0336 20.07);
   border-radius: 4px;
   grid-area: lap4;
   height: 20vh;
@@ -924,9 +928,12 @@ footer p {
 
 .io {
   aspect-ratio: 2 / 1;
-  border-radius: 20px;
-  height: 75dvh;
-  padding: 1rem;
+  border-radius: 30px;
+  filter: sepia(50%);
+  height: 70dvh;
+  margin-top: 1dvw;
+  margin-left: 5dvw;
+  padding: 2rem;
   width: 35dvw;
 }
 
@@ -1571,9 +1578,12 @@ footer p {
   .io {
     aspect-ratio: 2 / 1;
     border-radius: 20px;
-    height: 80dvh;
-    padding: 1rem;
-    width: 35dvw;
+    border-radius: 30px;
+  filter: sepia(50%);
+  height: 80dvh;
+  margin-left: 5dvw;
+  padding: 2rem;
+    width: 30dvw;
   }
 
   .mirror {
