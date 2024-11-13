@@ -71,14 +71,9 @@
 
   main {
     align-items: center;
-    background-attachment: fixed;
-  background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      oklch(96.69% 0.0232 82.12) 70% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
-  height:170dvh;
+  height:180dvh;
   justify-content: center;
   
 
@@ -87,7 +82,7 @@
   .blurb{
     border-radius: 8px;
     color: var(--text);
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 14px;
     margin-top: 25dvw;
     padding: 8%;
@@ -161,11 +156,6 @@
 
     main {
         align-items: center;
-        background-attachment: fixed;
-      background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-          oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
-      background-repeat: no-repeat;
-      background-size: cover;
       display: flex;
       flex-direction: row;
       height:170dvh;
@@ -182,7 +172,7 @@
   .blurb{
     border-radius: 8px;
     color: var(--text);
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 16px;
     line-height: 2rem;
     padding: 8%;
@@ -251,7 +241,6 @@
 
     main {
         align-items: center;
-        
       display: flex;
       flex-direction: row;
       height:180dvh;
@@ -268,7 +257,7 @@
   .blurb{
     border-radius: 8px;
     color: var(--text);
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 18px;
     line-height: 2.5rem;
     padding: 6%;
