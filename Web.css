@@ -17,7 +17,12 @@
   }
   
   body {
-    background-color: var(--bground);
+    background-attachment: fixed;
+    background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
+        oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
+    background-repeat: no-repeat;
+    background-size: cover;
+  
   }
   
   
@@ -65,52 +70,20 @@
   .offcanvas-header {
     background-color: var(--accent);
   }
-  /* Navbar End */
-
-  /* Main Start */
-
-  main {
-    align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height:180dvh;
-  justify-content: center;
   
+  /* Navbar end */
 
-  }
 
-  .blurb{
-    border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
-    font-size: 14px;
-    margin-top: 8dvW;
-    padding: 8%;
-    text-wrap: pretty;
-    width: 100dvw;
-  
-  }
-
-  .me {
-    border-radius: 7px;
-    width: 80dvw;
-    opacity: 0.7;
-  }
-
-  /* Footer */
   footer {
     background-color: var(--bground);
     border-top: 10px solid var(--text);
     display: flex;
     flex-direction: column;
-    height: 20dvh;
     padding: 1rem;
   }
   
   footer p {
     font-size: 12px;
-    
   }
   
   .linked {
@@ -136,11 +109,11 @@
     justify-content: center;
     gap: 1%;
   }
-
+  
   /* media queries for desktop and large screen (will work on tablet at later time */
-
-@media screen and (min-width: 1026px) and (max-width: 1440px) {
-
+  
+  @media screen and (min-width: 1026px) and (max-width: 1440px) {
+  
     .navbar {
       background-color: var(--accent) !important;
       height: 20dvh;
@@ -155,36 +128,20 @@
       border: 1px solid var(--elem4);
       color: var(--text);
     }
-
-    main {
-        align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height:160dvh;
-      justify-content: center;
-}
-
-.me {
-    border-radius: 8px;
-    margin-top: 10dvh;
-    width: 35dvw;
-    opacity: 0.7;
-  }
-
-  .blurb{
-    border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
-    font-size: 16px;
-    line-height: 2rem;
-    padding: 8%;
-    text-wrap: pretty;
-    width: 50dvw;
   
-  }
-
-  footer {
+    body {
+      background-attachment: fixed;
+      background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
+          oklch(96.69% 0.0232 82.12) 35% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+}
+footer {
     align-items: center;
     background-color: var(--bground);
     border-top: 10px solid var(--text);
@@ -193,11 +150,11 @@
     justify-content: space-around;
     padding-top: 4rem;
   }
-
+  
   footer p {
     font-size: 18px;
   }
-
+  
   .linked {
     align-items: center;
     display: flex;
@@ -205,7 +162,7 @@
     justify-content: center;
     gap: 1%;
   }
-
+  
   .mail {
     align-items: center;
     display: flex;
@@ -213,7 +170,7 @@
     justify-content: center;
     gap: 1%;
   }
-
+  
   .resume {
     align-items: center;
     display: flex;
@@ -221,14 +178,21 @@
     justify-content: center;
     gap: 1%;
   }
-
-}
-
-/* large media */
-
-@media screen and (min-width: 1600px) {
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  /* large media */
+  
+  @media screen and (min-width: 1600px) {
+    
+    
     .navbar {
       background-color: var(--accent) !important;
     }
@@ -242,72 +206,13 @@
       border: 1px solid var(--elem4);
       color: var(--text);
     }
-
-    main {
-        align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height:160dvh;
-      justify-content: center;
-}
-
-.me {
-    border-radius: 8px;
-    margin-top: 10dvh;
-    width: 30dvw;
-    opacity: 0.6;
-  }
-
-  .blurb{
-    border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
-    font-size: 18px;
-    line-height: 2.5rem;
-    margin-top: 1dvw;
-    padding: 6%;
-    text-wrap: pretty;
-    width: 50dvw;
   
-  }
-
-  footer {
-    align-items: center;
-    background-color: var(--bground);
-    border-top: 10px solid var(--text);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 4rem;
-  }
-
-  footer p {
-    font-size: 18px;
-  }
-
-  .linked {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-
-  .mail {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-
-  .resume {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-
+    body {
+      background-attachment: fixed;
+      background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
+          oklch(96.69% 0.0232 82.12) 30% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 }
+  

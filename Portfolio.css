@@ -82,14 +82,16 @@ body {
   display: flex;
   height: 55dvh;
   justify-content: center;
-  padding: 2rem;
-  place-items: flex-end;
+  padding: 1rem;
+  place-items: center;
+  text-wrap: balance;
 
 }
 
 .lead {
   color: var(--text);
   font-family: var(--title-font);
+  line-height: 2.5rem;
 
 }
 
@@ -97,7 +99,7 @@ body {
 
 .cat {
   margin-left: 2rem;
-  margin-top: -5rem;
+  margin-top: -21rem;
   height: 20dvh;
   opacity: 65%;
 
