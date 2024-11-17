@@ -17,7 +17,12 @@ html * {
 }
 
 body {
-  background-color: var(--bground);
+  background-attachment: fixed;
+  background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
+      oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 
@@ -70,13 +75,7 @@ body {
 
 /* Jumbo start */
 
-body {
-  background-attachment: fixed;
-  background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      oklch(96.69% 0.0232 82.12) 70% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .jumbotron {
 
@@ -105,12 +104,13 @@ body {
 }
 
 .paw {
-	-webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation-timing-function: ease-in;
 }
 
 
- @-webkit-keyframes fade-in {
+ @keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -135,6 +135,8 @@ body {
 
 
 /* Generic rules start */
+
+
 h1 {
   color: var(--text);
   font-family: var(--title-font);
@@ -454,7 +456,12 @@ footer p {
         oklch(96.69% 0.0232 82.12) 35% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    
   }
+  
 
   .jumbotron {
     display: flex;
@@ -579,43 +586,44 @@ footer p {
 
   .web1:hover,
   .web1:focus {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+    animation-timing-function: ease-in;
   }
 
 
-@-webkit-keyframes wobble-hor-bottom {
+@keyframes wobble-hor-bottom {
 
   0%,
   100% {
-    -webkit-transform: translateX(0%);
     transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
     transform-origin: 50% 50%;
   }
 
   15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
     transform: translateX(-30px) rotate(-6deg);
   }
 
   30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
     transform: translateX(15px) rotate(6deg);
   }
 
   45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
     transform: translateX(-15px) rotate(-3.6deg);
   }
 
   60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
     transform: translateX(9px) rotate(2.4deg);
   }
 
   75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
     transform: translateX(-6px) rotate(-1.2deg);
   }
 }
@@ -707,7 +715,7 @@ footer p {
 
 
 
-@-webkit-keyframes wobble-hor-bottom {
+@keyframes wobble-hor-bottom {
 
   0%,
   100% {
@@ -1065,6 +1073,7 @@ footer p {
   gap: 1%;
 }
 }
+
 
 
 
