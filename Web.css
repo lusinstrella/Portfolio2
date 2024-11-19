@@ -80,7 +80,7 @@
 
   .mu1 {
     margin-top: -2rem;
-    max-width: 80dvw;
+    max-width: 90dvw;
   }
   /* jumbotron end */
 
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 4rem 2rem;
   }
 
   h1 {
@@ -123,6 +123,13 @@
     margin-top: -8dvh;
   }
   /* section-process end */
+
+  /* prob */
+  .gulp {
+    margin-top: -3rem;
+    max-width: 50dvh;
+  }
+  /* prob end */
 
   /* section inspo */
   .plant {
