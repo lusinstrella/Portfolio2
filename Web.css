@@ -15,17 +15,11 @@
   html * {
     box-sizing: border-box;
   }
-  
+
   body {
-    background-attachment: fixed;
-    background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-        oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
-    background-repeat: no-repeat;
-    background-size: cover;
-  
+    background-color: var(--bground);
   }
-  
-  
+    
   .navbar {
     background-color: var(--accent) !important;
     width: 100dvw;
@@ -72,6 +66,80 @@
   }
   
   /* Navbar end */
+
+  /* jumbotron */
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50dvh;
+    justify-content: center;
+    margin-top: 2dvh;
+  }
+
+  .mu1 {
+    margin-top: -2rem;
+    max-width: 80dvw;
+  }
+  /* jumbotron end */
+
+  /* main */
+  /* section-process */
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  h1 {
+    color: var(--text);
+    font-family: var(--title-font);
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+
+  ol {
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 20px;
+    line-height: 2.5rem;
+    padding: 1rem;
+    width: 90dvw;
+  }
+
+  p {
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 2rem;
+    text-wrap: pretty;
+    width: 80dvw;
+  }
+
+  .process {
+    margin-top: -8dvh;
+  }
+  /* section-process end */
+
+  /* section inspo */
+  .plant {
+    border-radius: 7px;
+    box-shadow: -30px -25px 0px oklch(84.9% 0.0246 180.53);
+    margin: 2rem;
+    max-width: 65dvw;
+
+  }
+  /* inspo end */
+  /* log */
+  .aroma {
+    border-radius: 50%;
+    max-width: 60dvw;
+    padding: 1rem;
+  }
+  /* log end */
 
 
   footer {
@@ -129,17 +197,7 @@
       color: var(--text);
     }
   
-    body {
-      background-attachment: fixed;
-      background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
-          oklch(96.69% 0.0232 82.12) 35% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-      margin: 0px;
-      padding: 0px;
-      
-    }
+    
 }
 footer {
     align-items: center;
@@ -207,12 +265,6 @@ footer {
       color: var(--text);
     }
   
-    body {
-      background-attachment: fixed;
-      background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
-          oklch(96.69% 0.0232 82.12) 30% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    
 }
   
