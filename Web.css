@@ -75,12 +75,12 @@
     flex-direction: column;
     height: 50dvh;
     justify-content: center;
-    margin-top: 2dvh;
+    margin-top: 6dvh;
   }
 
   .mu1 {
     margin-top: -2rem;
-    max-width: 90dvw;
+    max-width: 100dvw;
   }
   /* jumbotron end */
 
@@ -96,9 +96,10 @@
 
   h1 {
     color: var(--text);
-    font-family: var(--title-font);
+    font-family: var(--body-font);
     font-size: 24px;
     margin-bottom: 2rem;
+   
   }
 
   ol {
@@ -106,21 +107,33 @@
     font-family: var(--body-font);
     font-size: 20px;
     line-height: 2.5rem;
+    margin-left: 2rem;
+    margin-top: -1rem;
     padding: 1rem;
     width: 90dvw;
   }
 
   p {
     color: var(--text);
-    font-family: var(--body-font);
+    font-family: var(--title-font);
     font-size: 16px;
     line-height: 2rem;
-    text-wrap: pretty;
+    text-wrap: balance;
     width: 80dvw;
   }
 
+  a {
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 20px;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+
+
+
   .process {
-    margin-top: -8dvh;
+    margin-top: -5dvh;
   }
   /* section-process end */
 
@@ -141,6 +154,11 @@
   }
   /* inspo end */
   /* log */
+
+  .log {
+    margin-top: -2rem;
+  }
+
   .aroma {
     border-radius: 50%;
     max-width: 60dvw;
@@ -148,8 +166,66 @@
   }
   /* log end */
 
+  /* pattern */
+  .leaves {
+   border-radius: 7px;
+    max-width: 80dvw;
+  }
+  /* pattern end */
 
-  footer {
+  /* delight */
+  .cup {
+    box-shadow: 20px -25px 0px oklch(52.52% 0.2027 13.75);
+    border-radius: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+    max-width: 60dvw;
+  }
+  /* delight end */
+
+  /* Respo */
+  .mobile {
+    margin-right: -8rem;
+    max-width: 90dvw;
+  }
+
+  .tablet {
+    margin-bottom: -15rem;
+    margin-left: -12rem;
+    max-width: 50dvw;
+  }
+  /* Respo end */
+
+  /* GitHub */
+  .git {
+    border-radius: 10%;
+    box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
+    margin-bottom: 2rem;
+    max-width: 50dvw;
+  }
+  /* GitHub end */
+
+  /* css */
+  .cssi {
+    box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
+    max-width: 50dvw;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  /* css end */
+
+ #topbutton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    
+   
+ }
+
+   /* footer */
+
+   footer {
     background-color: var(--bground);
     border-top: 10px solid var(--text);
     display: flex;
@@ -159,6 +235,7 @@
   
   footer p {
     font-size: 12px;
+    margin-left: 72%;
   }
   
   .linked {
@@ -184,14 +261,14 @@
     justify-content: center;
     gap: 1%;
   }
-  
+
   /* media queries for desktop and large screen (will work on tablet at later time */
-  
-  @media screen and (min-width: 1026px) and (max-width: 1440px) {
-  
+
+@media screen and (min-width: 1026px) and (max-width: 1440px) {
+
     .navbar {
       background-color: var(--accent) !important;
-      height: 20dvh;
+      height: 15dvh;
     }
   
     .offcanvas-body {
@@ -203,75 +280,232 @@
       border: 1px solid var(--elem4);
       color: var(--text);
     }
-  
+
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 50dvh;
+        justify-content: center;
+        margin-top: 55dvh;
+      }
     
+      .mu1 {
+        margin-top: -4rem;
+       margin-bottom: 20rem;
+        max-width: 60dvw;
+      }
+      /* jumbotron end */
+    
+      /* main */
+      /* section-process */
+      .process {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2dvw;
+        justify-content: flex-start;
+        margin: 2rem 2rem;
+      }
+    
+      h1 {
+        color: var(--text);
+        font-family: var(--body-font);
+        font-size: 36px;
+        margin-bottom: 2rem;
+        width: 25dvw;
+     
+       
+      }
+    
+      ol {
+        align-self: flex-end;
+        color: var(--text);
+        font-family: var(--body-font);
+        line-height: 4rem;
+        margin-right: 40rem;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+        width: 25dvw;
+
+    
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        padding-left: 4rem;
+        margin-bottom: 8rem;
+      }
+    
+      p {
+        color: var(--text);
+        font-family: var(--title-font);
+        font-size: 16px;
+        line-height: 2rem;
+        text-wrap: balance;
+        width: 40dvw;
+      }
+    
+      a {
+        color: var(--text);
+        font-family: var(--body-font);
+        font-size: 32px;
+        margin-top: 2rem;
+        text-decoration: none;
+      }
+      
+      li:hover,
+      li:focus {
+        color: var(--text);
+        border-bottom: 1px solid var(--elem4);
+      }
+      
+    
+      /* prob */
+      .gulp {
+        margin-top: -3rem;
+        max-width: 60dvh;
+      }
+      /* prob end */
+    
+      /* section inspo */
+      .plant {
+        border-radius: 7px;
+        box-shadow: -30px -25px 0px oklch(84.9% 0.0246 180.53);
+        margin: 2rem;
+        max-width: 25dvw;
+    
+      }
+      /* inspo end */
+      /* log */
+    
+      .log {
+        margin-top: -2rem;
+      }
+    
+      .aroma {
+        border-radius: 50%;
+        max-width: 30dvw;
+        padding: 1rem;
+      }
+      /* log end */
+    
+      /* pattern */
+      .leaves {
+       border-radius: 7px;
+        max-width: 30dvw;
+        margin-bottom: 4rem;
+      }
+      /* pattern end */
+    
+      /* delight */
+      .cup {
+        box-shadow: 20px -25px 0px oklch(52.52% 0.2027 13.75);
+        border-radius: 10%;
+        margin-top: 2rem;
+        margin-bottom: 2rem ;
+        max-width: 100dvw;
+      }
+
+      .touch {
+        width: 35dvw;
+      }
+
+    
+      /* delight end */
+    
+      /* Respo */
+      .mobile {
+        max-width: 30dvw;
+      }
+    
+      .tablet {
+        margin-bottom: -5rem;
+        margin-left: 2rem;
+        margin-right: -8rem;
+        max-width: 20dvw;
+      }
+      /* Respo end */
+    
+      /* GitHub */
+      .git {
+        border-radius: 10%;
+        box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
+        margin-bottom: 2rem;
+        max-width: 20dvw;
+      }
+      /* GitHub end */
+    
+      /* css */
+      .cssi {
+        box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
+        max-width: 20dvw;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+      }
+      /* css end */
+
+      .smell {
+        display: flex;
+        justify-content: center;
+        width: 30dvw;
+      }
+
+      .smell:hover,
+      .smell:focus {
+        color: var(--text);
+        border-bottom: 1px solid var(--elem4);
+      }
+    
+     #topbutton {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        
+       
+     }
+    
+       /* footer */
+    
+       footer {
+        background-color: var(--bground);
+        border-top: 10px solid var(--text);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      
+      footer p {
+        font-size: 12px;
+        margin-left: 72%;
+      }
+      
+      .linked {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1%;
+      }
+      
+      .mail {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1%;
+      }
+      
+      .resume {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1%;
+      }
+    
+
 }
-footer {
-    align-items: center;
-    background-color: var(--bground);
-    border-top: 10px solid var(--text);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 4rem;
-  }
-  
-  footer p {
-    font-size: 18px;
-  }
-  
-  .linked {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-  
-  .mail {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-  
-  .resume {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* large media */
-  
-  @media screen and (min-width: 1600px) {
-    
-    
-    .navbar {
-      background-color: var(--accent) !important;
-    }
-  
-    .offcanvas-body {
-      background-color: var(--accent) !important;
-    }
-  
-    .nav-link:hover,
-    .nav-link:focus {
-      border: 1px solid var(--elem4);
-      color: var(--text);
-    }
-  
-    
-}
-  
