@@ -165,9 +165,11 @@
   /* section-process end */
 
   h3 {
+
     color: var(--text);
     font-family: var(--body-font);
     font-size: 24px;
+    
   }
   
 
@@ -423,9 +425,11 @@
     }
 
     h3 {
+      border-bottom: 1px solid var(--text);
       color: var(--text);
       font-family: var(--body-font);
       font-size: 32px;
+      width: 40dvw;
     }
     
 
@@ -756,9 +760,11 @@
     }
 
     h3 {
+      border-bottom: 1px solid var(--text);
       color: var(--text);
       font-family: var(--body-font);
       font-size: 32px;
+      width: 30dvw;
     }
     
 
@@ -819,7 +825,7 @@
     }
     /* pattern end */
   
-    /* delight */
+    /* steam */
     .cup {
       flex-grow: 3;
       box-shadow: 20px 25px 0px oklch(52.52% 0.2027 13.75);
@@ -827,6 +833,10 @@
       margin-top: 2rem;
       margin-bottom: 2rem ;
       max-width: 20dvw;
+    }
+
+    .steam h3 {
+      margin-left: -1rem;
     }
 
     
@@ -887,7 +897,7 @@
     }
 
     .smell a {
-      font-size: 64px;
+      font-size: 56px;
     }
 
     a:hover,
