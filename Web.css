@@ -86,6 +86,7 @@
 
   /* main */
   /* section-process */
+
   section {
     align-items: center;
     display: flex;
@@ -97,11 +98,31 @@
   h1 {
     color: var(--text);
     font-family: var(--body-font);
-    font-size: 24px;
+    font-size:32px;
     margin-bottom: 2rem;
     margin-left: 5dvw;
+    margin-top: 2rem;
    
   }
+
+  h2 {
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 24px;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    width: 30dvw;
+   
+  }
+
+  .process {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvw;
+    justify-content: space-around;
+    margin: 6rem;
+    width: 80dvw;}
 
   ol {
     color: var(--text);
@@ -124,6 +145,10 @@
 
   }
 
+  .process li {
+    border-bottom: 1px solid var(--text);
+  }
+
   a {
     color: var(--text);
     font-family: var(--body-font);
@@ -135,9 +160,16 @@
 
 
   .process {
-    margin-top: -5dvh;
+    margin-top: -2dvh;
   }
   /* section-process end */
+
+  h3 {
+    color: var(--text);
+    font-family: var(--body-font);
+    font-size: 24px;
+  }
+  
 
   /* prob */
   .gulp {
@@ -156,10 +188,6 @@
   }
   /* inspo end */
   /* log */
-
-  .log {
-    margin-top: -2rem;
-  }
 
   .aroma {
     border-radius: 50%;
@@ -203,6 +231,7 @@
     border-radius: 10%;
     box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
     margin-bottom: 2rem;
+    margin-top: 2rem;
     max-width: 50dvw;
   }
   /* GitHub end */
@@ -212,13 +241,17 @@
     box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
     max-width: 50dvw;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    
   }
   /* css end */
 
 .smell {
   display: flex;
   justify-content: center;
+}
+
+.smell a {
+  font-size: 32px;
 }
 
  #topbutton {
@@ -298,15 +331,15 @@
     }
 
      h1 {
-      font-size: 86px;
-      margin-left: 58dvw;
+      font-size: 72px;
+      margin-left: 52dvw;
       width: 100dvw;
     }
   
     .mu1 {
       margin-top: -6rem;
      margin-bottom: 20rem;
-    max-width: 55dvw;
+      max-width: 55dvw;
     }
     /* jumbotron end */
   
@@ -347,14 +380,14 @@
   
     }
 
-    li {
+    .process li {
       border-bottom: 1px solid var(--text);
     }
 
-    li:hover,
-    li:focus {
+    .process li:hover,
+    .process li:focus {
       color: var(--elem4);
-      transition-duration: 0.5s;
+      transition-duration: 0.3s;
       transition-timing-function: ease-in;
       
     }
@@ -365,7 +398,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-bottom: 30dvh;
+      margin-bottom: 25dvh;
       
     }
 
@@ -454,6 +487,11 @@
     /* pattern end */
   
     /* delight */
+
+    .steam {
+      margin-top: -4rem;
+    }
+
     .cup {
       flex-grow: 3;
       box-shadow: 20px 25px 0px oklch(52.52% 0.2027 13.75);
@@ -481,11 +519,7 @@
       max-width: 15dvw;
     }
 
-    .respo p {
     
-      margin-left: 1rem;
- 
-    }
     /* Respo end */
   
     /* GitHub */
@@ -521,13 +555,13 @@
     }
 
     .smell a {
-      font-size: 64px;
+      font-size: 54px;
     }
 
     a:hover,
     a:focus {
       color: var(--elem4);
-      transition-duration: 0.5s;
+      transition-duration: 0.3s;
       transition-timing-function: ease-in;
      
     }
@@ -536,9 +570,7 @@
       display: flex;
       justify-content: flex-end;
       margin-right: 2rem;
-      margin-bottom: 1rem;
-     
-      
+      margin-bottom: 1rem;  
      
    }
 
@@ -681,12 +713,12 @@
   
     }
 
-    li {
+    .process li {
       border-bottom: 1px solid var(--text);
     }
 
-    li:hover,
-    li:focus {
+    .process li:hover,
+    .process li:focus {
       color: var(--elem4);
       transition-duration: 0.5s;
       transition-timing-function: ease-in;
