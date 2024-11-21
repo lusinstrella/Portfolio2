@@ -278,7 +278,7 @@ h3 {
 
 .mobile {
   aspect-ratio: 2 / 1;
-  height: 40dvh;
+  height: 30dvh;
   margin-right: 10%;
   width: 45dvw;
 }
@@ -682,9 +682,9 @@ footer p {
 
 .mobile {
   aspect-ratio: 2 / 1;
-  height: 70dvh;
+  height: 60dvh;
   margin-left: 10%;
-  width: 20dvw;
+  width: 30dvw;
 }
 
 .mob {
@@ -1333,9 +1333,9 @@ footer p {
 
   .mobile {
     aspect-ratio: 2 / 1;
-    height: 80dvh;
+    height: 70dvh;
     margin-left: 10%;
-    width: 20dvw;
+    width: 30dvw;
   }
 
   .mob {
