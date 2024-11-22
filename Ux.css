@@ -205,7 +205,6 @@
 
   /* delight */
   .cup {
-    box-shadow: 20px -25px 0px oklch(52.52% 0.2027 13.75);
     border-radius: 10%;
     margin-top: 2rem;
     margin-bottom: 2rem ;
@@ -228,8 +227,6 @@
 
   /* GitHub */
   .git {
-    border-radius: 10%;
-    box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
     margin-bottom: 2rem;
     margin-top: 2rem;
     max-width: 50dvw;
@@ -836,7 +833,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 20dvw;
+      margin-right: 35dvw;
     }
 
     .log p {
@@ -875,6 +872,7 @@
    .column {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
    }
@@ -884,6 +882,7 @@
     .chart3 {
       align-items: center;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       width: 10dvw;
     }
@@ -907,23 +906,17 @@
       font-size: 14px;
     }
     
-    /* log end */
+   
   
-    /* pattern */
+    /* chart*/
 
     .patt {
       margin-top: -3rem;
     }
 
-    .leaves {
-      flex-grow: 3;
-     border-radius: 7px;
-      max-width: 25dvw;
-      margin-bottom: 4rem;
-    }
     /* pattern end */
   
-    /* delight */
+    /* wireframes */
     .cup {
 
       border-radius: 10%;
@@ -932,22 +925,39 @@
       max-width: 10dvw;
     }
 
+    .wireframes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 14dvw;
+      margin-top: 6dvh;
+    }
     
   
     /* delight end */
   
     /* Respo */
-    .mobile {
-      max-width: 20dvw;
-      margin-left: -18rem;
-      
+   
+    .respo {
+      align-items: center;
+      height: 150dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   
+    .respo li {
+      color: var(--text);
+      font-family: var(--body-font);
+      font-size: 14px;
+    }
+
+  .blurb6 {
+    margin-left: -50rem;
+  }
+
     .tablet {
-      margin-bottom: -5rem;
-      margin-left: -2rem;
-      margin-right: -2rem;
-      max-width: 15dvw;
+      margin: 10dvh;
+      max-width: 10dvw;
     }
 
     .respo p {
@@ -955,12 +965,16 @@
       margin-left: 1rem;
  
     }
+
+    .Testing {
+      display: flex;
+      
+    }
     /* Respo end */
   
     /* GitHub */
     .git {
       border-radius: 10%;
-      box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
       margin-bottom: 2rem;
       max-width: 15dvw;
     }
