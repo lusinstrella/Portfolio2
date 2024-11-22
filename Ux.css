@@ -339,7 +339,7 @@
     .mu1 {
       margin-top: -6rem;
      margin-bottom: 20rem;
-      max-width: 55dvw;
+      max-width: 15dvw;
     }
     /* jumbotron end */
   
@@ -665,14 +665,14 @@
 
      h1 {
       font-size: 86px;
-      margin-left: 56dvw;
+      margin-left: 66dvw;
       width: 100dvw;
     }
   
     .mu1 {
-      margin-top: -6rem;
-     margin-bottom: 20rem;
-    max-width: 55dvw;
+      margin-top: 6rem;
+     margin-bottom: 30rem;
+    max-width: 25dvw;
     }
     /* jumbotron end */
   
@@ -683,6 +683,7 @@
 
     .process {
       align-items: center;
+      border: none;
       display: flex;
       flex-direction: row;
       gap: 10dvw;
@@ -728,10 +729,13 @@
       
     section {
       align-items: center;
+      border-bottom: 2px solid var(--text) ;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-bottom: 30dvh;
+      padding: 4rem;
+      width: 100dvw;
+   
       
     }
 
@@ -748,12 +752,12 @@
       
     }
 
-    article {
+    /* article {
       align-items: flex-start;
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
+    } */
 
     h3 {
       color: var(--text);
@@ -776,33 +780,133 @@
     .plant {
       border-radius: 7px;
       box-shadow: -30px -25px 0px oklch(84.9% 0.0246 180.53);
-      max-width: 20dvw;
+      max-width: 40dvw;
   
     }
     /* inspo end */
 
       /* prob */
+
+    .inspo {
+      border-top: 2px solid var(--text);
+    }
+
       .gulp {
+        border-radius: 7px;
+        box-shadow: -30px 25px 0px oklch(52.52% 0.2027 13.75);
         flex-grow: 2;
         margin-left: -3dvw;
         margin-top: -3rem;
-        max-width: 50dvh;
+        max-width: 35dvh;
+      }
+
+      .blurb2 {
+        margin-left: -12rem;
       }
       /* prob end */
 
     /* log */
   
     .log {
+      display: grid;
+      grid-template-columns: 2dvw 25dvw 50dvw;
+      grid-template-rows:  repeat(2, 20dvh);
+      grid-template-areas: ". . a"
+                           ". b c";
+      column-gap: 10dvw;
       margin-top: -2rem;
+      row-gap: 10dvh;
     }
 
-    .aroma {
-      flex-grow: 3;
-      border-radius: 50%;
-      margin-left: -5dvw;
-      max-width: 25dvw;
-      padding: 4rem;
+    .blurb3 {
+      margin-left: 4rem;
     }
+
+    .dots1 {
+      grid-area: b;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .dots2 {
+      grid-area: c;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 20dvw;
+    }
+
+    .log p {
+      grid-area: a;
+    }
+
+    .dots1 p,
+    .dots2 p {
+      align-self: center;
+      font-size: 14px;
+      margin-top: -3rem;
+      text-wrap: nowrap;
+      width: 30dvw;
+    }
+
+    .dots1 img,
+    .dots2 img {
+      max-width: 10dvw;
+      margin-right: -3dvw;
+    }
+
+
+    /* Charts */
+
+    .blurb4 {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .patt h3 {
+      margin-left: -28rem;
+    }
+  
+   .column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+    .chart1,
+    .chart2,
+    .chart3 {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 10dvw;
+    }
+   
+    .aroma1{
+      max-width: 5.5dvw;
+      
+    }
+
+    .aroma2 {
+      max-width: 6.5dvw;
+    }
+
+    .aroma3 {
+      max-width: 5.5dvw;
+    }
+
+    .chart1 p,
+    .chart2 p,
+    .chart3 p {
+      font-size: 14px;
+    }
+    
     /* log end */
   
     /* pattern */
@@ -821,12 +925,11 @@
   
     /* delight */
     .cup {
-      flex-grow: 3;
-      box-shadow: 20px 25px 0px oklch(52.52% 0.2027 13.75);
+
       border-radius: 10%;
       margin-top: 2rem;
       margin-bottom: 2rem ;
-      max-width: 20dvw;
+      max-width: 10dvw;
     }
 
     
