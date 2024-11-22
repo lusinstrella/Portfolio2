@@ -235,9 +235,9 @@
 
   /* css */
   .cssi {
-    box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
+    
     max-width: 50dvw;
-    border-radius: 50%;
+   
     
   }
   /* css end */
@@ -491,7 +491,7 @@
 
     .cup {
       flex-grow: 3;
-      box-shadow: 20px 25px 0px oklch(52.52% 0.2027 13.75);
+     
       border-radius: 10%;
       margin-top: 2rem;
       margin-bottom: 2rem ;
@@ -522,7 +522,7 @@
     /* GitHub */
     .git {
       border-radius: 10%;
-      box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
+  
       margin-bottom: 2rem;
       max-width: 15dvw;
     }
@@ -538,9 +538,9 @@
   
     /* css */
     .cssi {
-      box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
+     
       max-width: 20dvw;
-      border-radius: 50%;
+ 
       margin-bottom: 2rem;
     }
     /* css end */
@@ -989,10 +989,15 @@
     /* GitHub end */
   
     /* css */
+
+    .css {
+      border: none;
+    }
+
     .cssi {
-      box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
+     
       max-width: 20dvw;
-      border-radius: 50%;
+     
       margin-bottom: 2rem;
     }
     /* css end */
