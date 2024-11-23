@@ -662,7 +662,7 @@
 
      h1 {
       font-size: 86px;
-      margin-left: 66dvw;
+      margin-left: 63dvw;
       width: 100dvw;
     }
   
@@ -726,10 +726,11 @@
       
     section {
       align-items: center;
-      border-bottom: 2px solid var(--text) ;
+      border-bottom: 2px solid var(--footer) ;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      margin-left: 0;
       padding: 4rem;
       width: 100dvw;
    
@@ -827,21 +828,11 @@
       justify-content: center;
     }
 
-    .dots2 {
-      grid-area: c;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 35dvw;
-    }
-
     .log p {
       grid-area: a;
     }
 
-    .dots1 p,
-    .dots2 p {
+    .dots1 p {
       align-self: center;
       font-size: 14px;
       margin-top: -3rem;
@@ -849,10 +840,9 @@
       width: 30dvw;
     }
 
-    .dots1 img,
-    .dots2 img {
-      max-width: 10dvw;
-      margin-right: -3dvw;
+    .dots1 img {
+      max-width: 40dvw;
+      margin-left: 50dvw;
     }
 
 
@@ -869,28 +859,12 @@
       margin-left: -28rem;
     }
   
-   .column {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-   }
 
-    .chart1,
-    .chart2,
-    .chart3 {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 10dvw;
+
+    .chart1 {
+      width: 50dvw;
     }
    
-    .aroma1{
-      max-width: 5.5dvw;
-      
-    }
 
     .aroma2 {
       max-width: 6.5dvw;
@@ -945,19 +919,19 @@
       justify-content: center;
     }
   
-    .respo li {
-      color: var(--text);
-      font-family: var(--body-font);
-      font-size: 14px;
-    }
+    
 
   .blurb6 {
     margin-left: -50rem;
   }
 
-    .tablet {
+  .list {
+    max-width: 40dvw;
+  }
+
+    .captions {
       margin: 10dvh;
-      max-width: 10dvw;
+      max-width: 30dvw;
     }
 
     .respo p {
@@ -966,27 +940,16 @@
  
     }
 
-    .Testing {
-      display: flex;
-      
-    }
+  
     /* Respo end */
   
-    /* GitHub */
-    .git {
-      border-radius: 10%;
-      margin-bottom: 2rem;
-      max-width: 15dvw;
-    }
+   /* Iter */
 
-    .hub p {
-      margin-left: -4rem;
-    }
+   .Iterated img {
+    max-width: 40dvw;
+   }
 
-    .hub h3 {
-      margin-left: -4rem;
-    }
-    /* GitHub end */
+   /* Iter end */
   
     /* css */
 
@@ -996,7 +959,7 @@
 
     .cssi {
      
-      max-width: 20dvw;
+      max-width: 40dvw;
      
       margin-bottom: 2rem;
     }
