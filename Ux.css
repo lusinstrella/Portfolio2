@@ -783,11 +783,41 @@
     }
     /* inspo end */
 
-      /* prob */
+     
 
     .inspo {
-      border-top: 2px solid var(--text);
+      border-top: 2px solid var(--footer);
+    
     }
+
+     /* prob */
+
+
+     .sonia {
+      background-color: var(--elem1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      float: right;
+      margin-left: -2rem;
+      margin-top: 5rem;
+      width: 20dvw;
+    
+     
+      
+     }
+
+     .sonia p {
+      width: 22dvw;
+     }
+
+     h4 {
+      color: var(--text);
+      font-family: var(--title-font);
+      margin-bottom: -2rem;
+      margin-left: 2rem;
+      margin-top: 1em;
+     }
 
       .gulp {
         border-radius: 7px;
@@ -799,7 +829,7 @@
       }
 
       .blurb2 {
-        margin-left: -12rem;
+        margin-left: -4rem;
       }
       /* prob end */
 
@@ -942,7 +972,9 @@
 
   
     /* Respo end */
-  
+    .git{
+      max-width: 30dvw;
+    }
    /* Iter */
 
    .Iterated img {
