@@ -982,6 +982,7 @@
      }
 
      .sonia p {
+      font-size: 16px;
       width: 22dvw;
      }
 
@@ -989,7 +990,7 @@
       color: var(--text);
       font-family: var(--title-font);
       margin-bottom: -2rem;
-      margin-left: 2rem;
+      margin-left: -9rem;
       margin-top: 1em;
      }
 
@@ -1062,17 +1063,27 @@
       margin-top: -3rem;
     }
 
+    .chart1 {
+      width: 50dvw;
+    }
+
     
 
     /* pattern end */
   
     /* wireframes */
+
+    .blurb5 {
+
+      margin-left: 1rem;
+      margin-top: -5rem;
+    }
     .cup {
 
       border-radius: 10%;
       margin-top: 2rem;
       margin-bottom: 2rem ;
-      max-width: 10dvw;
+      max-width: 12dvw;
     }
 
     .wireframes {
@@ -1089,7 +1100,7 @@
    
     .respo {
       align-items: center;
-      height: 150dvh;
+      height: 165dvh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1119,7 +1130,7 @@
   
     /* Respo end */
     .git{
-      max-width: 30dvw;
+      max-width: 15dvw;
     }
    /* Iter */
 
@@ -1143,15 +1154,7 @@
     }
     /* css end */
 
-    .smell {
-      display: flex;
-      justify-content: center;
-      
-    }
-
-    .smell a {
-      font-size: 64px;
-    }
+  
 
     a:hover,
     a:focus {
