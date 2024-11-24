@@ -1129,9 +1129,14 @@
 
   
     /* Respo end */
+    /* hub */
     .git{
       max-width: 15dvw;
     }
+    .blurb7 {
+      margin-left: -13rem;
+    }
+    /* hub end */
    /* Iter */
 
    .Iterated img {
