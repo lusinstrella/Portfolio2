@@ -76,12 +76,32 @@
     height: 50dvh;
     justify-content: center;
     margin-top: 6dvh;
+    
   }
 
 
   .mu1 {
     max-width: 50dvw;
+    transform-style: preserve-3d;
+    animation: bounceIn 1s ease-out forwards;
+    
   }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.3) translateY(-50px);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1) translateY(10px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+
+
   /* jumbotron end */
 
   /* main */
@@ -283,6 +303,8 @@
   .cssi {
     
     max-width: 80dvw;
+    transform-style: preserve-3d;
+    animation: bounceIn 1s ease-out forwards;
    
     
   }
