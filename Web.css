@@ -256,14 +256,21 @@
   font-size: 32px;
 }
 
- #topbutton {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    
+ 
+#scrollToTopBtn {
+  background-color: var(--bground);
+  border: 1px solid var(--footer);
+  border-radius: 50%;
+  bottom: 60px;
+  cursor: pointer;
+  display: none;
+  right: 55px;
+  height: 30px;
+  position: fixed;
+  width: 30px;
    
  }
+
 
    /* footer */
 
@@ -570,13 +577,25 @@
      
     }
   
-   #topbutton {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 2rem;
-      margin-bottom: 1rem;  
-     
-   }
+    #scrollToTopBtn {
+      align-items: flex-end;
+      border: 1px solid var(--footer);
+      border-radius: 50%;
+      bottom: 50px;
+      cursor: pointer;
+      display: none;
+      right: 420px;
+        justify-content: center;
+        height: 30px;
+        position: fixed;
+        width: 30px;
+       
+     }
+  
+     #scrollToTopBtn:hover {
+      background-color: oklch(60.86% 0.0608 139.44/0.5);;
+     }
+  
 
 
  /* footer */
@@ -908,15 +927,25 @@
      
     }
   
-   #topbutton {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 2rem;
-      margin-bottom: 1rem;
-     
-      
-     
-   }
+    #scrollToTopBtn {
+      align-items: flex-end;
+      border: 1px solid var(--footer);
+      border-radius: 50%;
+      bottom: 20px;
+      cursor: pointer;
+      display: none;
+      right: 15px;
+        justify-content: center;
+        height: 3dvh;
+        position: fixed;
+        width: 1.5dvw;
+       
+     }
+  
+     #scrollToTopBtn:hover {
+      background-color: oklch(60.86% 0.0608 139.44/0.5);;
+     }
+  
 
 
  /* footer */

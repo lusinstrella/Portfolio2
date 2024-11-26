@@ -313,10 +313,10 @@
 
 
   #scrollToTopBtn {
-    
+    background-color: var(--bground);
     border: 1px solid var(--footer);
     border-radius: 50%;
-    bottom: 50px;
+    bottom: 60px;
     cursor: pointer;
     display: none;
     right: 55px;
