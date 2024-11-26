@@ -290,18 +290,22 @@
 
 
 
- #topbutton {
-  align-items: flex-end;
-  background-color: var(--bground);
-  border: none;
-    display: flex;
-    float: right;
-    height: 10dvw;
-    margin-right: 2rem;
-   margin-top: -5rem;
+  #scrollToTopBtn {
     
-   
- }
+    border: 1px solid var(--footer);
+    border-radius: 50%;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+    right: 55px;
+    height: 30px;
+    position: fixed;
+    width: 30px;
+     
+   }
+
+
+
 
    /* footer */
 
@@ -726,23 +730,25 @@
    
   }
 
- #topbutton {
-  align-items: flex-end;
-  border: 1px solid var(--footer);
-  border-radius: 10%;
-  display: flex;
-    float: right;
-    justify-content: center;
-    height: 7dvh;
-    margin-right: 2rem;
-    margin-top: -10rem;
-    width: 4dvw;
-   
- }
+  #scrollToTopBtn {
+    align-items: flex-end;
+    border: 1px solid var(--footer);
+    border-radius: 50%;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+    right: 420px;
+      justify-content: center;
+      height: 30px;
+      position: fixed;
+      width: 30px;
+     
+   }
 
- #topbutton:hover {
-  background-color: oklch(60.86% 0.0608 139.44/0.5);;
- }
+   #scrollToTopBtn:hover {
+    background-color: oklch(60.86% 0.0608 139.44/0.5);;
+   }
+
 
 
 
@@ -1169,21 +1175,22 @@
      
     }
   
-   #topbutton {
+   #scrollToTopBtn {
     align-items: flex-end;
     border: 1px solid var(--footer);
-    border-radius: 10%;
-    display: flex;
-      float: right;
+    border-radius: 50%;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    right: 15px;
       justify-content: center;
-      height: 7dvh;
-      margin-right: 2rem;
-      margin-top: -10rem;
-      width: 3dvw;
+      height: 3dvh;
+      position: fixed;
+      width: 1.5dvw;
      
    }
 
-   #topbutton:hover {
+   #scrollToTopBtn:hover {
     background-color: oklch(60.86% 0.0608 139.44/0.5);;
    }
 
