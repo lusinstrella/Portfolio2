@@ -1681,6 +1681,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 2rem;
     padding-top: 4rem;
   }
 
