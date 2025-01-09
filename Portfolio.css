@@ -100,7 +100,7 @@ body {
   margin-left: 2rem;
   margin-top: -21rem;
   height: 20dvh;
-  opacity: 65%;
+  opacity: 30%;
 
 }
 
@@ -447,7 +447,7 @@ footer p {
 
   .nav-link:hover,
   .nav-link:focus {
-    border: 1px solid var(--elem4);
+    border-bottom: 1px solid var(--elem4);
     color: var(--text);
   }
 
@@ -485,7 +485,7 @@ footer p {
     margin-left: 8rem;
     margin-top: -30rem;
     height: 60dvh;
-    opacity: 50%;
+    opacity: 30%;
   }
 
   .about {
@@ -587,9 +587,9 @@ footer p {
 
   .web1:hover,
   .web1:focus {
-    animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
-    animation-timing-function: ease-in;
+    
+    animation: wobble-hor-bottom 1.3s both;
+  
   }
 
 
@@ -710,8 +710,8 @@ footer p {
 
 .study:hover,
 .study:focus {
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-  animation: wobble-hor-bottom 0.8s both;
+
+  animation: wobble-hor-bottom 1.3s both;
 }
 
 
@@ -833,8 +833,8 @@ footer p {
 
 .collage:hover,
 .collage:focus {
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-  animation: wobble-hor-bottom 0.8s both;
+
+  animation: wobble-hor-bottom 1.3s both;
 }
 
 
@@ -957,8 +957,7 @@ footer p {
 
 .mirror:hover,
 .mirror:focus {
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-  animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 1.3s both;
 }
 
 
@@ -967,35 +966,35 @@ footer p {
 
   0%,
   100% {
-    -webkit-transform: translateX(0%);
+    
     transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+   
+    transform-origin: 10% 10%;
   }
 
   15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-    transform: translateX(-30px) rotate(-6deg);
+   
+    transform: translateX(-10px) rotate(-3deg);
   }
 
   30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-    transform: translateX(15px) rotate(6deg);
+   
+    transform: translateX(6px) rotate(3deg);
   }
 
   45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-    transform: translateX(-15px) rotate(-3.6deg);
+
+    transform: translateX(-7px) rotate(-1.6deg);
   }
 
   60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-    transform: translateX(9px) rotate(2.4deg);
+   
+    transform: translateX(4px) rotate(0.5deg);
   }
 
   75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-    transform: translateX(-6px) rotate(-1.2deg);
+
+    transform: translateX(-2px) rotate(-0.2deg);
   }
 }
 
@@ -1003,35 +1002,35 @@ footer p {
 
   0%,
   100% {
-    -webkit-transform: translateX(0%);
+    
     transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+   
+    transform-origin: 20% 20%;
   }
 
   15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-    transform: translateX(-30px) rotate(-6deg);
+   
+    transform: translateX(-10px) rotate(-3deg);
   }
 
   30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-    transform: translateX(15px) rotate(6deg);
+   
+    transform: translateX(6px) rotate(3deg);
   }
 
   45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-    transform: translateX(-15px) rotate(-3.6deg);
+
+    transform: translateX(-7px) rotate(-1.6deg);
   }
 
   60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-    transform: translateX(9px) rotate(2.4deg);
+   
+    transform: translateX(4px) rotate(0.5deg);
   }
 
   75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-    transform: translateX(-6px) rotate(-1.2deg);
+
+    transform: translateX(-2px) rotate(-0.2deg);
   }
 }
 
@@ -1098,7 +1097,7 @@ footer p {
 
   .nav-link:hover,
   .nav-link:focus {
-    border: 1px solid var(--elem4);
+    border-bottom: 1px solid var(--elem4);
     color: var(--text);
   }
 
@@ -1131,7 +1130,7 @@ footer p {
     margin-left: 8rem;
     margin-top: -30rem;
     height: 80dvh;
-    opacity: 50%;
+    opacity: 30%;
   }
 
   .about {
@@ -1193,7 +1192,9 @@ footer p {
     width: 100dvw;
   }
 
-
+ main {
+  height: 550dvh ;
+ }
 
   .web {
 
@@ -1240,8 +1241,7 @@ footer p {
 
   .web1:hover,
   .web1:focus {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 1.3s both;
   }
 
 
@@ -1361,8 +1361,8 @@ footer p {
 
   .study:hover,
   .study:focus {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
+   
+    animation: wobble-hor-bottom 1.3s both;
   }
 
 
@@ -1484,8 +1484,7 @@ footer p {
 
   .collage:hover,
   .collage:focus {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 1.3s both;
   }
 
 
@@ -1607,8 +1606,7 @@ footer p {
 
   .mirror:hover,
   .mirror:focus {
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 1.3s both;
   }
 
 
