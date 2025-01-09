@@ -43,15 +43,6 @@ body {
 }
 
 
-
-.active {
-  background-color: var(--elem1);
-  border-radius: 8px;
-  color: var(--text) !important;
-  padding: 10px;
-
-}
-
 .offcanvas-body {
   background-color: var(--bground);
 

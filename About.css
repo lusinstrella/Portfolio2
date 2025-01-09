@@ -40,13 +40,14 @@
   
   
   
-  .active {
-    background-color: var(--elem1);
-    border-radius: 8px;
-    color: var(--text) !important;
-    padding: 10px;
+ 
+    .active {
+      border-bottom: 2px solid var(--elem2);
+      color: var(--text) !important;
+      padding: 10px;
+    
+    }
   
-  }
   
   .offcanvas-body {
     background-color: var(--bground);
@@ -152,7 +153,7 @@
   
     .nav-link:hover,
     .nav-link:focus {
-      border: 1px solid var(--elem4);
+      border-bottom: 1px solid var(--elem4);
       color: var(--text);
     }
 
@@ -239,7 +240,7 @@
   
     .nav-link:hover,
     .nav-link:focus {
-      border: 1px solid var(--elem4);
+      border-bottom: 1px solid var(--elem4);
       color: var(--text);
     }
 
