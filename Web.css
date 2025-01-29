@@ -29,6 +29,8 @@
     margin-left: 2rem;
     max-width: 150px;
   }
+
+  
   
   .nav-link {
     color: var(--text);
@@ -251,7 +253,7 @@
 }
 
 .smell a {
-  font-size: 32px;
+  font-size: 24px;
 }
 
  
@@ -321,6 +323,11 @@
     .offcanvas-body {
       background-color: var(--accent) !important;
     }
+
+    .logo:hover,
+  .logo:focus {
+    border-bottom: none;
+  }
   
     .nav-link:hover,
     .nav-link:focus {
@@ -653,12 +660,21 @@
     background-color: var(--accent) !important;
   }
 
+
   .nav-link:hover,
   .nav-link:focus {
     border-bottom: 1px solid var(--elem4);
     color: var(--text);
   }
 
+   .active {
+    pointer-events: none;
+}
+
+  .no-hover:hover {
+    border-bottom: none;
+  }
+  
   .navbar {
     background-color: var(--accent) !important;
     height: 15dvh;
@@ -757,7 +773,7 @@
       font-family: var(--title-font);
       font-size: 18px;
       line-height: 2rem;
-      padding: 4rem;
+      padding: 2rem;
       width: 40dvw;
       text-wrap: balance;
       
@@ -876,12 +892,7 @@
     /* Respo end */
   
     /* GitHub */
-    .git {
-      border-radius: 10%;
-      box-shadow: -20px -25px 0px oklch(61.51% 0.0347 230.66);
-      margin-bottom: 2rem;
-      max-width: 15dvw;
-    }
+    
 
     .hub p {
       margin-left: -4rem;
@@ -893,12 +904,8 @@
     /* GitHub end */
   
     /* css */
-    .cssi {
-      box-shadow: 15px 20px 0px oklch(65.02% 0.1025 209.34);
-      max-width: 20dvw;
-      border-radius: 50%;
-      margin-bottom: 2rem;
-    }
+
+    
     /* css end */
 
     .smell {
@@ -908,15 +915,16 @@
     }
 
     .smell a {
-      font-size: 56px;
+      font-family: var(--body-font);
+      font-size: 32px;
+      margin-bottom: 2rem;
     }
 
     a:hover,
     a:focus {
-      color: var(--elem4);
-      transition-duration: 0.5s;
-      transition-timing-function: ease-in;
-     
+      border-bottom: 1px solid var(--elem4);
+      color: var(--text);
+      
     }
   
     #scrollToTopBtn {
@@ -980,6 +988,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 1%;
+  }
+
+  footer a:hover {
+    border-bottom: none;
   }
 
 }
