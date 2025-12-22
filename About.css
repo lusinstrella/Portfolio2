@@ -111,9 +111,13 @@
   
   footer p {
     font-size: 12px;
-    
+
   }
-  
+
+  footer i {
+    font-size: 24px;
+  }
+
   .linked {
     align-items: center;
     display: flex;
@@ -121,7 +125,7 @@
     justify-content: center;
     gap: 1%;
   }
-  
+
   .mail {
     align-items: center;
     display: flex;
@@ -129,7 +133,7 @@
     justify-content: center;
     gap: 1%;
   }
-  
+
   .resume {
     align-items: center;
     display: flex;
@@ -197,6 +201,10 @@
 
   footer p {
     font-size: 18px;
+  }
+
+  footer i {
+    font-size: 24px;
   }
 
   .linked {
@@ -285,6 +293,10 @@
 
   footer p {
     font-size: 18px;
+  }
+
+  footer i {
+    font-size: 24px;
   }
 
   .linked {

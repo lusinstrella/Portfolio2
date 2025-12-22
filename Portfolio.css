@@ -96,20 +96,10 @@ body {
 }
 
 .paw {
-	        animation: fade-in 6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation-timing-function: ease-in;
+  animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-timing-function: ease-in;
 }
 
-
- @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -169,13 +159,12 @@ h3 {
 }
 
 .me {
-  aspect-ratio: 2 / 1;
   border-radius: 12px;
   box-shadow: -30px -25px 0px oklch(84.9% 0.0246 180.53);
   height: auto;
   margin-left: 10dvw;
   max-width: 100%;
-
+  object-fit: cover;
 }
 
 /* about Section end */
@@ -193,9 +182,10 @@ h3 {
 }
 
 .dash {
-  aspect-ratio: 1 / 1;
-  height: 25dvh;
+  height: auto;
   width: 80dvw;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Skills Section end */
@@ -222,12 +212,12 @@ h3 {
 }
 
 .desktop {
-  aspect-ratio: 2 / 1;
   border-radius: 4px;
-  max-height: 100dvh;
+  height: auto;
   margin: 2rem;
   width: 60dvw;
-
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .desk {
@@ -268,10 +258,11 @@ h3 {
 }
 
 .mobile {
-  aspect-ratio: 2 / 1;
-  height: 30dvh;
+  height: auto;
   margin-right: 10%;
   width: 45dvw;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .mob {
@@ -313,10 +304,11 @@ h3 {
 }
 
 .coll {
-  aspect-ratio: 2 / 1;
   border-radius: 4px;
   grid-area: img3;
-  height: 30dvh;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
   margin-right: 5%;
   width: 55dvw;
 }
@@ -369,11 +361,12 @@ h3 {
 }
 
 .io {
-  aspect-ratio: 2 / 1;
   border-radius: 20px;
-  height: 40dvh;
+  height: auto;
   padding: 1rem;
   width: 70dvw;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .mirror {
@@ -397,6 +390,10 @@ footer {
 
 footer p {
   font-size: 12px;
+}
+
+footer i {
+  font-size: 24px;
 }
 
 .linked {
@@ -595,28 +592,28 @@ footer p {
   }
 
   15% {
-    transform: translateX(-30px) rotate(-6deg);
-    transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-8px) rotate(-2deg);
+    transform: translateX(-8px) rotate(-2deg);
   }
 
   30% {
-    transform: translateX(15px) rotate(6deg);
-    transform: translateX(15px) rotate(6deg);
+    transform: translateX(6px) rotate(2deg);
+    transform: translateX(6px) rotate(2deg);
   }
 
   45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-    transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-4px) rotate(-1deg);
+    transform: translateX(-4px) rotate(-1deg);
   }
 
   60% {
-    transform: translateX(9px) rotate(2.4deg);
-    transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(3px) rotate(0.8deg);
+    transform: translateX(3px) rotate(0.8deg);
   }
 
   75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-    transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-2px) rotate(-0.4deg);
+    transform: translateX(-2px) rotate(-0.4deg);
   }
 }
 
@@ -1038,6 +1035,10 @@ footer {
 
 footer p {
   font-size: 18px;
+}
+
+footer i {
+  font-size: 24px;
 }
 
 .linked {

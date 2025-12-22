@@ -88,11 +88,11 @@
 
   @keyframes bounceIn {
     0% {
-      transform: scale(0.3) translateY(-50px);
+      transform: scale(0.95) translateY(-10px);
       opacity: 0;
     }
     50% {
-      transform: scale(1.1) translateY(10px);
+      transform: scale(1.02) translateY(2px);
       opacity: 1;
     }
     100% {
@@ -340,9 +340,13 @@
   
   footer p {
     font-size: 12px;
-    
+
   }
-  
+
+  footer i {
+    font-size: 24px;
+  }
+
   .linked {
     align-items: center;
     display: flex;
@@ -350,7 +354,7 @@
     justify-content: center;
     gap: 1%;
   }
-  
+
   .mail {
     align-items: center;
     display: flex;
@@ -358,7 +362,7 @@
     justify-content: center;
     gap: 1%;
   }
-  
+
   .resume {
     align-items: center;
     display: flex;

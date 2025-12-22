@@ -9,7 +9,80 @@
     --elem2: oklch(65.02% 0.1025 209.34);
     --elem3: oklch(61.51% 0.0347 230.66);
     --elem4: oklch(52.52% 0.2027 13.75);
-  
+  }
+
+  /* Lightbox styles */
+  .single-img {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .single-img:hover {
+    transform: scale(1.05);
+  }
+
+  .single-img img {
+    transition: opacity 0.3s ease;
+  }
+
+  .single-img:hover img {
+    opacity: 0.9;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .lightbox-content {
+    max-width: 95%;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: var(--bground);
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10000;
+  }
+
+  .lightbox-close:hover {
+    color: var(--accent);
+  }
+
+  .lightbox-caption {
+    display: none;
   }
   
   html * {
@@ -122,7 +195,11 @@ img {
   footer p {
     font-size: 12px;
   }
-  
+
+  footer i {
+    font-size: 24px;
+  }
+
   .linked {
     align-items: center;
     display: flex;
@@ -130,7 +207,7 @@ img {
     justify-content: center;
     gap: 1%;
   }
-  
+
   .mail {
     align-items: center;
     display: flex;
@@ -138,7 +215,7 @@ img {
     justify-content: center;
     gap: 1%;
   }
-  
+
   .resume {
     align-items: center;
     display: flex;
