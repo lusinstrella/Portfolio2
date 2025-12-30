@@ -83,10 +83,13 @@ nav.navbar.navbar-light,
   color: #11172A;
 }
 
-.offcanvas {
-  background-color: var(--bground);
-  height: 100vh !important;
-  min-height: 100vh;
+/* Mobile-only offcanvas container styles */
+@media (max-width: 991px) {
+  .offcanvas {
+    background-color: var(--bground);
+    height: 100vh !important;
+    min-height: 100vh;
+  }
 }
 
 .offcanvas-header {
@@ -102,19 +105,25 @@ nav.navbar.navbar-light,
 
 .offcanvas-body {
   background-color: var(--bground);
-  padding: 0.5rem 1rem;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
 }
 
-.offcanvas .navbar-nav {
-  gap: 0.5rem;
-  width: 100%;
-}
+/* Mobile-only offcanvas body styles */
+@media (max-width: 991px) {
+  .offcanvas-body {
+    padding: 0.5rem 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-.offcanvas .nav-item {
-  width: 100%;
+  .offcanvas .navbar-nav {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .offcanvas .nav-item {
+    width: 100%;
+  }
 }
 
 /* Hero Section */
