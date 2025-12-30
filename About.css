@@ -52,7 +52,14 @@
     color: #11172A;
     font-size: 1.2rem;
     font-family: var(--title-font);
-    margin-top: 4rem;
+    margin-top: 0;
+  }
+
+  /* Mobile offcanvas nav links - light text on dark background */
+  .offcanvas .nav-link {
+    color: var(--text);
+    margin-top: 0;
+    padding: 1rem 1.5rem;
   }
 
   .active {
@@ -63,10 +70,25 @@
 
   .offcanvas {
     background-color: var(--bground);
+    height: 100vh !important;
+    min-height: 100vh;
   }
 
   .offcanvas-body {
     background-color: var(--bground);
+    padding: 0.5rem 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offcanvas .navbar-nav {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .offcanvas .nav-item {
+    width: 100%;
   }
 
   .navbar-toggler-icon {
@@ -79,7 +101,14 @@
   }
   
   .offcanvas-header {
-    background-color: var(--accent);
+    background-color: var(--bground);
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .offcanvas-header .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 1;
   }
   /* Navbar End */
 
