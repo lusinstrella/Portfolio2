@@ -285,7 +285,7 @@ h3 {
   background-color: var(--secondary-text);
   border: 2px solid var(--accent);
   border-radius: 12px;
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(90, 93, 107, 0.3);
@@ -293,8 +293,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  min-height: 300px;
+  gap: 1rem;
+  min-height: 280px;
 }
 
 .project-card:hover {
@@ -304,13 +304,24 @@ h3 {
 }
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   transition: all 0.3s ease;
 }
 
 .project-card:hover .card-icon {
-  transform: scale(1.1);
+  animation: iconPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
 }
 
 .project-card h3 {
@@ -1461,7 +1472,8 @@ footer i {
   }
 
   .project-card {
-    padding: 4rem 3rem;
+    padding: 3rem 2.5rem;
+    gap: 1.2rem;
   }
 
   .project-card h3 {
@@ -1469,8 +1481,8 @@ footer i {
   }
 
   .card-icon {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .card-link {

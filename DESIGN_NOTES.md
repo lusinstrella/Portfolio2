@@ -68,6 +68,10 @@ background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
   - Border: `2px solid #C9A9A6` (dusty rose)
   - Shadow: `0 4px 12px rgba(90, 93, 107, 0.3)`
   - Text color: `#F9F8F3` (off-white)
+  - Padding: `2rem 1.5rem` (mobile), `3rem 2.5rem` (1600px+)
+  - Gap: `1rem` (mobile), `1.2rem` (1600px+)
+  - Min-height: `280px`
+  - Icon size: `110px` (mobile/desktop), `130px` (1600px+)
   - Hover background: `#4a4d5a` (darker slate gray)
   - Hover shadow: `0 8px 24px rgba(90, 93, 107, 0.5)`
   - Hover transform: `translateY(-8px)`
@@ -151,7 +155,7 @@ All icons use:
 - Reduced top spacing: Jumbotron margin-top reduced to 5rem, min-height 50dvh
 - Larger typography: Hero title 4rem, subtitle 2rem, section headings 3.5rem
 - Bigger profile image: 30dvw width, max 500px
-- Enhanced project cards: 100px icons, 2.2rem headings, 4rem padding, 3rem gaps
+- Enhanced project cards: 130px icons, 2.2rem headings, 3rem 2.5rem padding, 1.2rem gap, 3rem grid gaps
 - Footer improvements: space-evenly distribution across full width, 1.8rem icons, 1.1rem text, proper vertical alignment with 0.8rem gap between icon and text
 
 ## Key Changes Made
