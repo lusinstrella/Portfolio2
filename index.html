@@ -27,7 +27,7 @@
     <header>
       
           <!--Navbar Start -->
-          <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top">
+          <nav class="navbar navbar-light navbar-expand-lg fixed-top">
             <div class="container-fluid">
               <a href="index.html">
                 <img src="Images/logo-transparent-png 2.png" class="logo" alt="logo">
@@ -71,13 +71,10 @@
           <!--Jumbotron Start -->
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <p class="lead">Welcome to my portfolio. My name is Fulvia Serra and I am a web-designer and multimedia artist. I am also an avid cyclist and unrepentant cat lover.
-            </p>
+              <h1 class="hero-title">Fulvia Serra</h1>
+              <p class="hero-subtitle">Web Designer & Multimedia Artist</p>
+              <p class="hero-tagline">Creating digital experiences where technology meets artistry</p>
             </div>
-          </div>
-
-          <div class="paw">
-            <img src="Images/AdobeStock_686247352.png" class="cat" alt="cat paws" loading="eager" fetchpriority="high">
           </div>
     </header>
 
@@ -87,7 +84,7 @@
             <!--Profile Pic start-->
             <div class="mediagrid">
             <section class="about">
-                <img src="Images/Profile_pic_2-Grayscale.jpg" class="me" alt="A woman holding a camera to take a picture" loading="lazy" width="800" height="1200">
+                <img src="Images/Profile_pic_2-Grayscale-Web.jpg" class="me" alt="A woman holding a camera to take a picture" loading="lazy">
             </section>
 
             <!--Profile pic end -->
@@ -96,9 +93,18 @@
 
             <section class="skills">
                 <h1>My Skills</h1>
-                <article class="ar1">
-                <img src="Images/skills.png" class="dash" alt="Skills dashboard" loading="lazy">
-              </article>
+                <ol class="skills-grid">
+                  <li class="skill-badge">HTML/CSS</li>
+                  <li class="skill-badge">Responsive Design</li>
+                  <li class="skill-badge">JavaScript</li>
+                  <li class="skill-badge">UX Research</li>
+                  <li class="skill-badge">Wireframing</li>
+                  <li class="skill-badge">Prototyping</li>
+                  <li class="skill-badge">Photography</li>
+                  <li class="skill-badge">Ceramics</li>
+                  <li class="skill-badge">Visual Design</li>
+                  <li class="skill-badge">Accessibility</li>
+                </ol>
             </section>
           </div>
             <!--Skill section end -->
@@ -106,84 +112,72 @@
             <!--Projects section start -->
 
             <section class="projects">
-
-              
                 <h1>My Projects</h1>
-                <!--Article web start -->
-                <article class="web">
-                  <div class="desk">
-                    <img src="Images/Web-design-Frame 2.png" class="desktop" alt="A desktop computer showing a website related to coffee" loading="lazy">
-                  </div>
-                    <div class="web1">
-                        <h3>Web Design</h3>
-                        <p>CSS stands at that irresistible intersection between graphic design, 
-                            technological wonder, and language learning</p>
-                    </div>
-                </article>
-                 <!--Article web end -->
 
-                <!--Article case start -->
-                <article class="case">
-                  <div class="mob">
-                    <img src="Images/Group 19.png" class="mobile" alt="a mobile phone showing the logo of an ASL learning app " loading="lazy">
-                    </div>
-            
-                    <div class="study">
-                        <h3>Case Study</h3>
-                        <p>Research, writing, and problem-solving are skills that I developed
-                             as a university researcher. 
-                              I now apply them to my design</p>
-                    </div>
-                </article>
+                <div class="projects-grid">
+                  <!--Card web start -->
+                  <article class="project-card">
+                      <img src="Images/icon-web-dev.svg" class="card-icon" alt="Web Development Icon">
+                      <h3>Web Design</h3>
+                      <a href="Web.html" class="card-link">View Projects →</a>
+                  </article>
+                  <!--Card web end -->
 
-                <!--Article case end -->
+                  <!--Card case start -->
+                  <article class="project-card">
+                      <img src="Images/icon-ux-ui.svg" class="card-icon" alt="UX/UI Design Icon">
+                      <h3>UX/UI Case Study</h3>
+                      <a href="Ux.html" class="card-link">View Case Study →</a>
+                  </article>
+                  <!--Card case end -->
 
-                <!--Article Art start -->
-                <article class="art">
-                  <div class="artsy">
-                    <img src="Images/Collage.png"class="coll" alt="an artistic collage" loading="lazy">
-                  </div>
-                    <div class="collage">
-                      <a href="Art.html" class="inDiv">
-                        <h3>My Art</h3>
-                        <p>The place where I try to transform all my intentions and ideas into physical objects.</p>
-                      </a>
-                    </div>
-                </article>
-               <!--Article art end -->     
+                  <!--Card art start -->
+                  <article class="project-card">
+                      <img src="Images/icon-photography.svg" class="card-icon" alt="Photography Icon">
+                      <h3>My Art</h3>
+                      <a href="Art.html" class="card-link">View Portfolio →</a>
+                  </article>
+                  <!--Card art end -->
 
-                <!--Article bio start -->
-                <article class="bio">
-                  <div class="je">
-                    <img src="Images/Profile pic 3.png" class="io" alt="a woman's face is reflected in an old scratched mirror" loading="lazy">
-                  </div>
-                   <div class="mirror">
-                    <a href="About.html" class="inDiv">
-                        <h3>About Me</h3>
-                        <p>Creativity is the common thread that goes through my 20 years of professional experience.</p>
-                    </div></a>
-                </article>
-                <!--Article bio end -->
+                  <!--Card bio start -->
+                  <article class="project-card">
+                      <img src="Images/icon-about.svg" class="card-icon" alt="About Me Icon">
+                      <h3>About Me</h3>
+                      <a href="About.html" class="card-link">Learn More →</a>
+                  </article>
+                  <!--Card bio end -->
+                </div>
             </section>
             <!--Projects section end-->
+
+            <!--CTA Button start -->
+            <div class="cta-container">
+              <a href="Contact.html" class="cta-button">Let's Work Together</a>
+            </div>
+            <!--CTA Button end -->
           </main>
+
+          <!--Back to top button -->
+          <button id="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
 
           <!--Footer start -->
           <footer id="footer">
             <div class="linked">
-               
+
            <a href="https://www.linkedin.com/in/fulviaserra/" target="_blank">
-           <i class="fa-brands fa-linkedin-in" style="color: oklch(34.16% 0.0746 237.6);"></i></a>
+           <i class="fa-brands fa-linkedin-in" style="color: #E6D17B;"></i></a>
            <p>Follow me</p>
            </div>
            <div class="mail">
             <a href="mailto:fuserra@gmail.com" target="_blank">
-           <i class="fa-solid fa-envelope" style="color: oklch(34.16% 0.0746 237.6);"></i></a>
+           <i class="fa-solid fa-envelope" style="color: #E6D17B;"></i></a>
            <p>Write me</p>
         </div>
         <div class="resume">
           <a href="https://drive.google.com/file/d/10k7BcRyZaGYpUWWNJ_Tfdh06C7fHh6EV/view?usp=sharing" target="_blank">
-            <i class="fa-solid fa-file" style="color: oklch(34.16% 0.0746 237.6);"></i></a>
+            <i class="fa-solid fa-file" style="color: #E6D17B;"></i></a>
             <p>Resume</p>
         </div>
           </footer>
@@ -191,5 +185,6 @@
    
           <!--Java Script -->
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
+          <script src="script.js" defer></script>
 </body>
 </html>
