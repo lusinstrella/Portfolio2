@@ -221,7 +221,7 @@ h3 {
 .skills-grid {
   list-style: decimal;
   font-family: var(--body-font);
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--bground);
   padding-left: 2rem;
@@ -1308,10 +1308,18 @@ footer i {
   nav.navbar,
   nav.navbar.navbar-light {
     background-color: #FAF8F5 !important;
+    max-width: 100vw;
+    padding-right: 3rem;
   }
 
   .offcanvas-body {
     background-color: transparent !important;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    max-width: 100%;
+    margin-right: 2rem;
   }
 
   .nav-link:hover,
@@ -1333,19 +1341,28 @@ footer i {
 
   .jumbotron {
     display: flex;
-    height: 100dvh;
+    min-height: 50dvh;
     justify-content: center;
-    margin-top: 10dvh;
-    padding: 1em;
+    margin-top: 5rem;
+    padding: 2rem;
     place-items: center;
+  }
 
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.3rem;
   }
 
   .lead {
     font-size: 3.5rem;
     line-height: 6rem;
-
-
   }
 
   .cat {
@@ -1360,40 +1377,43 @@ footer i {
   }
 
   .me {
-    margin-left: 15dvw;
+    margin-left: 5dvw;
     grid-area: img;
-    width: 20dvw;
-    max-width: 350px;
+    width: 30dvw;
+    max-width: 500px;
   }
 
   .mediagrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-areas: "text img";
-    margin-bottom: 6dvh;
-    gap: 2rem;
+    margin-bottom: 4rem;
+    gap: 3rem;
     align-items: start;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3rem;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 3.5rem;
   }
 
   p {
     color: var(--text);
     font-family: var(--body-font);
-    font-size: 24px;
+    font-size: 1.4rem;
     line-height: 2em;
     padding-left: 2em;
     padding-bottom: 0.5em;
     padding-right: 1em;
-
   }
 
   h3 {
     color: var(--text);
     font-family: var(--title-font);
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 1em;
     padding-left: 1.5em;
     padding-top: 1em;
@@ -1405,10 +1425,14 @@ footer i {
     margin-left: 2rem;
   }
 
+  .skills-grid {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
   .ar1 {
     display: flex;
     justify-content: center;
-
   }
 
   .dash {
@@ -1418,10 +1442,51 @@ footer i {
     width: 100dvw;
   }
 
+  .projects {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3rem;
+  }
+
+  .projects h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     max-width: 100%;
+  }
+
+  .project-card {
+    padding: 4rem 3rem;
+  }
+
+  .project-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .card-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-link {
+    font-size: 1.3rem;
+  }
+
+  .cta-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 3rem;
+  }
+
+  .cta-button {
+    font-size: 1.4rem;
+    padding: 1.2rem 3.5rem;
   }
 
   .web {
@@ -1916,37 +1981,36 @@ footer i {
     background-color: #11172A;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 6rem;
     margin-top: 4rem;
-    padding-top: 4rem;
+    padding: 4rem 2rem;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
   footer p {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: var(--text);
+    margin: 0;
   }
 
-  .linked {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
+  footer i {
+    font-size: 2rem;
   }
 
-  .mail {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-  }
-
+  .linked,
+  .mail,
   .resume {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1%;
+    gap: 1rem;
   }
 }

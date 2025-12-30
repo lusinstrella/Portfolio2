@@ -85,8 +85,9 @@ All icons use:
 
 ## Skills Section (Homepage)
 - Simple ordered list (`<ol>`) with decimal numbering
-- Font size: 20px
+- Font size: 1.5rem (24px)
 - Line height: 2.5rem
+- Large screen (1600px+): 1.8rem font-size, 3rem line-height
 - Text color: `#11172A` (midnight blue)
 - Skills displayed as list items with bottom border
 - Border color: `rgba(201, 169, 166, 0.3)` (semi-transparent rose)
@@ -126,20 +127,32 @@ All icons use:
 - Profile picture size:
   - Mobile: 60dvw width
   - Desktop (1026px-1440px): 25dvw width, max 400px
-  - Large desktop (1600px+): 20dvw width, max 350px
+  - Large desktop (1600px+): 30dvw width, max 500px
 - Profile picture shadow: `-30px -25px 0px #9CAF88` (sage green)
 - Text color: `#11172A` (midnight blue)
-- Desktop: Side-by-side image and text in 1fr 1fr grid layout with 2rem gap
+- Desktop layouts:
+  - 1026px-1440px: 1fr 1fr grid with 2rem gap
+  - 1600px+: 1.2fr 1fr grid with 3rem gap, max-width 1600px, centered
 
 ## Typography & Text Colors
 - **Main content text**: `#11172A` (midnight blue) - Used for headings, paragraphs, skills
 - **Hero section**:
-  - Title: `clamp(2rem, 5vw, 3rem)` - Responsive sizing
-  - Subtitle: `clamp(1rem, 3vw, 1.5rem)` - Responsive sizing
-  - Tagline: `clamp(0.9rem, 2vw, 1.1rem)` - Slate gray color, responsive sizing
+  - Mobile/Default: `clamp(2rem, 5vw, 3rem)` title, `clamp(1rem, 3vw, 1.5rem)` subtitle, `clamp(0.9rem, 2vw, 1.1rem)` tagline
+  - Large desktop (1600px+): `4rem` title, `2rem` subtitle, `1.3rem` tagline
+- **Section headings**:
+  - Mobile: Default sizes
+  - Large desktop (1600px+): h1 `3.5rem`, h3 `2rem`, p `1.4rem`
 - **Light text on dark backgrounds**: `#F9F8F3` (off-white) - Used for footer text, navbar offcanvas, project cards
 - **Project card text**: Off-white on slate gray background
 - **Responsive hero**: Uses clamp() for fluid typography to prevent text cutoff on mobile
+
+## Large Screen Optimizations (1600px+)
+- Max-width constraints: 1600px for all major sections (centered with auto margins)
+- Reduced top spacing: Jumbotron margin-top reduced to 5rem, min-height 50dvh
+- Larger typography: Hero title 4rem, subtitle 2rem, section headings 3.5rem
+- Bigger profile image: 30dvw width, max 500px
+- Enhanced project cards: 100px icons, 2.2rem headings, 4rem padding, 3rem gaps
+- Footer improvements: centered with 6rem gap between items, 2rem icons, 1.2rem text, proper vertical alignment with 0.8rem gap between icon and text
 
 ## Key Changes Made
 1. ✅ Changed from orange OKLCH palette to rose/sage/midnight blue hex colors
