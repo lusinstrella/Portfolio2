@@ -1981,10 +1981,10 @@ footer i {
     background-color: #11172A;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-evenly;
     margin-top: 4rem;
     padding: 4rem 2rem;
+    width: 100%;
   }
 
   footer div {
@@ -1995,13 +1995,13 @@ footer i {
   }
 
   footer p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text);
     margin: 0;
   }
 
   footer i {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .linked,

@@ -152,7 +152,7 @@ All icons use:
 - Larger typography: Hero title 4rem, subtitle 2rem, section headings 3.5rem
 - Bigger profile image: 30dvw width, max 500px
 - Enhanced project cards: 100px icons, 2.2rem headings, 4rem padding, 3rem gaps
-- Footer improvements: centered with 6rem gap between items, 2rem icons, 1.2rem text, proper vertical alignment with 0.8rem gap between icon and text
+- Footer improvements: space-evenly distribution across full width, 1.8rem icons, 1.1rem text, proper vertical alignment with 0.8rem gap between icon and text
 
 ## Key Changes Made
 1. ✅ Changed from orange OKLCH palette to rose/sage/midnight blue hex colors
