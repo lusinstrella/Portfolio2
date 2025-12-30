@@ -1,14 +1,17 @@
 :root {
     --body-font: "Vidaloka", serif, system-ui;
     --title-font: "Trocchi", serif, system-ui;
-    --bground: oklch(96.69% 0.0232 82.12);
-    --text: oklch(34.16% 0.0746 237.6);
-    --footer: oklch(60.86% 0.0608 139.44);
-    --accent: oklch(77.94% 0.1325 60.89);
-    --elem1: oklch(84.9% 0.0246 180.53);
-    --elem2: oklch(65.02% 0.1025 209.34);
-    --elem3: oklch(61.51% 0.0347 230.66);
-    --elem4: oklch(52.52% 0.2027 13.75);
+    --bground: #11172A;
+    --text: #F9F8F3;
+    --footer: #11172A;
+    --accent: #C9A9A6;
+    --secondary-accent: #9CAF88;
+    --surface: #9CAF88;
+    --secondary-text: #5A5D6B;
+    --elem1: #C9A9A6;
+    --elem2: #9CAF88;
+    --elem3: #C9A9A6;
+    --elem4: #9CAF88;
   }
 
   /* Lightbox styles */
@@ -90,12 +93,12 @@
   }
   
   body {
-    background-color: var(--bground);
+    background-color: #FAF8F5;
   }
   
   
   .navbar {
-    background-color: var(--accent) !important;
+    background-color: #11172A !important;
     width: 100dvw;
   }
   
@@ -127,12 +130,12 @@
   }
   
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='oklch(34.16% 0.0746 237.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23F9F8F3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-  
+
   .navbar-toggler {
-    border-color: oklch(34.16% 0.0746 237.6);
-    color: oklch(34.16% 0.0746 237.6);
+    border-color: #F9F8F3;
+    color: #F9F8F3;
   }
   
   .offcanvas-header {
@@ -145,7 +148,7 @@
   body {
     background-attachment: fixed;
   background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      oklch(96.69% 0.0232 82.12) 70% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
+      #C9A9A6 70% 0%, #FAF8F5 -6% 76%);
   background-repeat: no-repeat;
   background-size: cover;
   }
@@ -186,7 +189,6 @@ img {
 
   footer {
     background-color: var(--bground);
-    border-top: 10px solid var(--text);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -231,12 +233,12 @@ img {
 @media screen and (min-width: 1026px) and (max-width: 1440px) {
 
     .navbar {
-      background-color: var(--accent) !important;
+      background-color: #11172A !important;
       height: 15dvh;
     }
-  
+
     .offcanvas-body {
-      background-color: var(--accent) !important;
+      background-color: #11172A !important;
     }
   
     .nav-link:hover,
@@ -249,7 +251,7 @@ img {
   body {
     background-attachment: fixed;
   background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
+      #C9A9A6 40% 0%, #FAF8F5 -6% 76%);
   background-repeat: no-repeat;
   background-size: cover;
   }
@@ -286,7 +288,6 @@ img {
     footer {
         align-items: center;
         background-color: var(--bground);
-        border-top: 10px solid var(--text);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -326,16 +327,16 @@ img {
 /* large media */
 
 @media screen and (min-width: 1600px) {
-  
-  
+
+
     .navbar {
-      background-color: var(--accent) !important;
+      background-color: #11172A !important;
     }
-  
+
     .offcanvas-body {
-      background-color: var(--accent) !important;
+      background-color: #11172A !important;
     }
-  
+
     .nav-link:hover,
     .nav-link:focus {
       border-bottom: 1px solid var(--elem4);
@@ -345,7 +346,7 @@ img {
     body {
         background-attachment: fixed;
       background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-          oklch(96.69% 0.0232 82.12) 30% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);  
+          #C9A9A6 30% 0%, #FAF8F5 -6% 76%);
       background-repeat: no-repeat;
       background-size: cover;
       }
@@ -381,7 +382,6 @@ img {
     footer {
         align-items: center;
         background-color: var(--bground);
-        border-top: 10px solid var(--text);
         display: flex;
         flex-direction: row;
         justify-content: space-around;

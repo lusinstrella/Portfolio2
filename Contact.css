@@ -1,14 +1,17 @@
 :root {
   --body-font: "Vidaloka", serif, system-ui;
   --title-font: "Trocchi", serif, system-ui;
-  --bground: oklch(96.69% 0.0232 82.12);
-  --text: oklch(34.16% 0.0746 237.6);
-  --footer: oklch(60.86% 0.0608 139.44);
-  --accent: oklch(77.94% 0.1325 60.89);
-  --elem1: oklch(84.9% 0.0246 180.53);
-  --elem2: oklch(65.02% 0.1025 209.34);
-  --elem3: oklch(61.51% 0.0347 230.66);
-  --elem4: oklch(52.52% 0.2027 13.75);
+  --bground: #11172A;
+  --text: #F9F8F3;
+  --footer: #11172A;
+  --accent: #C9A9A6;
+  --secondary-accent: #9CAF88;
+  --surface: #9CAF88;
+  --secondary-text: #5A5D6B;
+  --elem1: #C9A9A6;
+  --elem2: #9CAF88;
+  --elem3: #C9A9A6;
+  --elem4: #9CAF88;
 }
 
 html * {
@@ -18,7 +21,7 @@ html * {
 body {
   background-attachment: fixed;
   background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      oklch(96.69% 0.0232 82.12) 40% 0%, oklch(77.94% 0.1325 60.89) -6% 76%);
+      #C9A9A6 40% 0%, #FAF8F5 -6% 76%);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -29,9 +32,18 @@ body {
 
 /* Navbar Styles */
 .navbar,
-nav.navbar.bg-dark {
-  background-color: var(--accent) !important;
+nav.navbar,
+nav.navbar.navbar-light,
+.navbar.fixed-top {
+  background-color: #FAF8F5 !important;
   width: 100dvw;
+}
+
+/* Ensure offcanvas doesn't affect navbar on desktop */
+@media (min-width: 992px) {
+  .offcanvas-body {
+    background-color: transparent !important;
+  }
 }
 
 .logo {
@@ -40,7 +52,7 @@ nav.navbar.bg-dark {
 }
 
 .nav-link {
-  color: var(--text);
+  color: #11172A;
   font-size: 1.2rem;
   font-family: var(--title-font);
   margin-top: 4rem;
@@ -56,12 +68,16 @@ nav.navbar.bg-dark {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='oklch(34.16% 0.0746 237.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2311172A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler {
-  border-color: oklch(34.16% 0.0746 237.6);
-  color: oklch(34.16% 0.0746 237.6);
+  border-color: #11172A;
+  color: #11172A;
+}
+
+.offcanvas {
+  background-color: var(--bground);
 }
 
 .offcanvas-header {
@@ -231,7 +247,7 @@ main {
 /* Footer Styles */
 footer {
   align-items: center;
-  background-color: var(--accent);
+  background-color: #FAF8F5;
   display: flex;
   gap: 20%;
   height: 15dvh;
@@ -316,18 +332,18 @@ footer p {
 /* Medium to Large Screens */
 @media screen and (min-width: 1026px) and (max-width: 1440px) {
   .navbar {
-    background-color: var(--accent) !important;
+    background-color: #FAF8F5 !important;
     height: 20dvh;
   }
 
   .offcanvas-body {
-    background-color: var(--accent) !important;
+    background-color: transparent !important;
   }
 
   .nav-link:hover,
   .nav-link:focus {
     border-bottom: 1px solid var(--elem4);
-    color: var(--text);
+    color: #11172A;
   }
 }
 
