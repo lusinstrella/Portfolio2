@@ -8,6 +8,7 @@
   --secondary-accent: #9CAF88;
   --surface: #9CAF88;
   --secondary-text: #5A5D6B;
+  --card-bg: #F0EDE8;
   --elem1: #C9A9A6;
   --elem2: #9CAF88;
   --elem3: #C9A9A6;
@@ -140,7 +141,7 @@ main {
   max-width: 800px;
   width: 100%;
   padding: 3rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
