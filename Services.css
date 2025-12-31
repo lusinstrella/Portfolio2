@@ -143,8 +143,8 @@ nav.navbar.navbar-light,
 .hero-subtitle {
   font-family: var(--body-font);
   font-size: 1.3rem;
-  color: var(--text);
-  opacity: 0.8;
+  color: #5A5D6B;
+  opacity: 1;
 }
 
 /* Services Container */
@@ -288,7 +288,7 @@ nav.navbar.navbar-light,
 .cta-section p {
   font-family: var(--body-font);
   font-size: 1.2rem;
-  color: var(--text);
+  color: #5A5D6B;
   margin-bottom: 2rem;
 }
 

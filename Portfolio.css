@@ -158,7 +158,7 @@ nav.navbar.navbar-light,
 }
 
 .hero-tagline {
-  color: var(--secondary-text);
+  color: #5A5D6B;
   font-family: var(--body-font);
   font-size: clamp(0.9rem, 2vw, 1.1rem);
   font-style: italic;

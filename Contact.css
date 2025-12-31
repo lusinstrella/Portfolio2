@@ -156,7 +156,7 @@ main {
 .contact-intro {
   font-family: var(--body-font);
   font-size: 1.1rem;
-  color: var(--text);
+  color: #5A5D6B;
   text-align: center;
   margin-bottom: 3rem;
   line-height: 1.6;
