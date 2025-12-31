@@ -186,6 +186,11 @@
 
   footer i {
     font-size: 24px;
+    transition: all 0.4s ease;
+  }
+
+  footer a:hover i {
+    transform: scale(1.1) rotate(5deg);
   }
 
   .linked {
@@ -274,6 +279,11 @@
 
   footer i {
     font-size: 24px;
+    transition: all 0.4s ease;
+  }
+
+  footer a:hover i {
+    transform: scale(1.1) rotate(5deg);
   }
 
   .linked {
@@ -365,6 +375,11 @@
 
   footer i {
     font-size: 24px;
+    transition: all 0.4s ease;
+  }
+
+  footer a:hover i {
+    transform: scale(1.1) rotate(5deg);
   }
 
   .linked {
