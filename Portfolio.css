@@ -417,10 +417,10 @@ h3 {
 }
 
 .card-link:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--elem2);
+  color: var(--text);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 /* Main container */
@@ -453,11 +453,11 @@ main {
 }
 
 .cta-button:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  border-color: var(--bground);
+  background-color: var(--elem2);
+  color: var(--text);
+  border-color: var(--elem2);
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(17, 23, 42, 0.3);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 /* Back to Top Button */
@@ -489,10 +489,10 @@ main {
 }
 
 #back-to-top:hover {
-  background-color: #E6D17B;
-  color: var(--bground);
+  background-color: var(--elem2);
+  color: var(--text);
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 #back-to-top:active {

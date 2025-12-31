@@ -290,9 +290,10 @@ nav.navbar.navbar-light,
 }
 
 .service-link:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  transform: translateX(5px);
+  background-color: var(--elem2);
+  color: var(--text);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 .service-link i {
@@ -340,11 +341,11 @@ nav.navbar.navbar-light,
 }
 
 .cta-button:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  border-color: var(--bground);
+  background-color: var(--elem2);
+  color: var(--text);
+  border-color: var(--elem2);
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(17, 23, 42, 0.3);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 /* Footer Styles */
