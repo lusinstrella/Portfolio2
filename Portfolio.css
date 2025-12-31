@@ -60,6 +60,15 @@ nav.navbar.navbar-light,
   font-size: 1.2rem;
   font-family: var(--title-font);
   margin-top: 0;
+  transition: border-bottom 0.3s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--elem2);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--text);
 }
 
 /* Mobile offcanvas nav links - light text on dark background */
