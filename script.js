@@ -20,3 +20,43 @@ if (backToTopBtn) {
     });
   });
 }
+
+// ===========================================
+// GRADIENT TEXT - SIMULATED FIXED BACKGROUND
+// ===========================================
+
+(function() {
+  const gradientElements = document.querySelectorAll('.gradient-text');
+
+  if (gradientElements.length === 0) return;
+
+  function updateGradientPositions() {
+    gradientElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const offsetX = -rect.left;
+      const offsetY = -rect.top;
+      el.style.setProperty('--offset-x', `${offsetX}px`);
+      el.style.setProperty('--offset-y', `${offsetY}px`);
+    });
+  }
+
+  let ticking = false;
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        updateGradientPositions();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', updateGradientPositions);
+  updateGradientPositions();
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(updateGradientPositions);
+  }
+})();

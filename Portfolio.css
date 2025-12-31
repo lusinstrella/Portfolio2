@@ -20,8 +20,8 @@ html * {
 
 body {
   background-attachment: fixed;
-  background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      #C9A9A6 40% 0%, #FAF8F5 -6% 76%);
+  background-image: radial-gradient(farthest-corner circle at 0% 100%,
+      #C9A9A6 40%, #FAF8F5 40%);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
@@ -707,8 +707,8 @@ footer i {
 
   body {
     background-attachment: fixed;
-    background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
-        #C9A9A6 35% 0%, #FAF8F5 -6% 76%);
+    background-image: radial-gradient(farthest-corner circle at 0% 90%,
+        #C9A9A6 35%, #FAF8F5 35%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -1379,8 +1379,8 @@ footer i {
 
   body {
     background-attachment: fixed;
-    background-image: radial-gradient(farthest-corner circle at 0% 90% in oklab,
-        #C9A9A6 30% 0%, #FAF8F5 -6% 76%);
+    background-image: radial-gradient(farthest-corner circle at 0% 90%,
+        #C9A9A6 30%, #FAF8F5 30%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -2064,3 +2064,52 @@ footer i {
     gap: 1rem;
   }
 }
+
+/* ===========================================
+   GRADIENT TEXT EFFECT - ADD AT END OF FILE
+   =========================================== */
+
+/* Mobile/Default - matches body gradient at 0% 100%, 40% */
+/* ===========================================
+   GRADIENT TEXT - SIMULATED FIXED BACKGROUND
+   =========================================== */
+
+.gradient-text {
+  --offset-x: 0px;
+  --offset-y: 0px;
+
+  background: radial-gradient(farthest-corner circle at 0% 100%,
+      #FAF8F5 40%, #11172A 40%);
+  background-size: 100vw 100vh;
+  background-position: var(--offset-x) var(--offset-y);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1440px) {
+  .gradient-text {
+    background: radial-gradient(farthest-corner circle at 0% 90%,
+        #FAF8F5 35%, #11172A 35%);
+    background-size: 100vw 100vh;
+    background-position: var(--offset-x) var(--offset-y);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .gradient-text {
+    background: radial-gradient(farthest-corner circle at 0% 90%,
+        #FAF8F5 30%, #11172A 30%);
+    background-size: 100vw 100vh;
+    background-position: var(--offset-x) var(--offset-y);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
