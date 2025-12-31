@@ -476,12 +476,6 @@ footer p {
   .offcanvas-body {
     background-color: transparent !important;
   }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    border-bottom: 1px solid var(--elem4);
-    color: #11172A;
-  }
 }
 
 /* Extra Large Screens */
@@ -492,11 +486,5 @@ footer p {
 
   .offcanvas-body {
     background-color: transparent !important;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    border-bottom: 1px solid var(--elem4);
-    color: #11172A;
   }
 }

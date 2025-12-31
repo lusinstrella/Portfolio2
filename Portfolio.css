@@ -745,12 +745,6 @@ footer a:hover i {
     background-color: transparent !important;
   }
 
-  .nav-link:hover,
-  .nav-link:focus {
-    border-bottom: 1px solid var(--elem4);
-    color: #11172A;
-  }
-
   body {
     background-attachment: fixed;
     background-image: radial-gradient(farthest-corner circle at 0% 90%,
@@ -1420,12 +1414,6 @@ footer a:hover i {
   .navbar-nav {
     max-width: 100%;
     margin-right: 2rem;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    border-bottom: 1px solid var(--elem4);
-    color: #11172A;
   }
 
   body {
