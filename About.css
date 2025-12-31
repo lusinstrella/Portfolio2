@@ -172,7 +172,7 @@
 
   /* Footer */
   footer {
-    background-color: #FAF8F5;
+    background-color: #11172A;
     display: flex;
     flex-direction: column;
     height: 20dvh;
@@ -261,7 +261,7 @@
 
   footer {
     align-items: center;
-    background-color: #FAF8F5;
+    background-color: #11172A;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -305,20 +305,20 @@
 /* large media */
 
 @media screen and (min-width: 1600px) {
-  
-  
+
+
     .navbar {
-      background-color: var(--accent) !important;
+      background-color: #FAF8F5 !important;
     }
-  
+
     .offcanvas-body {
-      background-color: var(--accent) !important;
+      background-color: transparent !important;
     }
-  
+
     .nav-link:hover,
     .nav-link:focus {
       border-bottom: 1px solid var(--elem4);
-      color: var(--text);
+      color: #11172A;
     }
 
     main {
@@ -352,7 +352,7 @@
 
   footer {
     align-items: center;
-    background-color: #FAF8F5;
+    background-color: #11172A;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

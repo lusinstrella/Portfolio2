@@ -209,10 +209,10 @@ main {
   font-family: var(--body-font);
   font-size: 1rem;
   padding: 0.75rem 1rem;
-  border: 2px solid var(--elem1);
+  border: 2px solid var(--accent);
   border-radius: 8px;
-  background-color: var(--bground);
-  color: var(--text);
+  background-color: #FFFFFF;
+  color: var(--bground);
   transition: all 0.3s ease;
 }
 
@@ -220,7 +220,7 @@ main {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--elem2);
-  box-shadow: 0 0 0 3px rgba(101, 140, 166, 0.1);
+  box-shadow: 0 0 0 3px rgba(156, 175, 136, 0.1);
 }
 
 .form-group textarea {
@@ -309,7 +309,7 @@ main {
 /* Footer Styles */
 footer {
   align-items: center;
-  background-color: #FAF8F5;
+  background-color: #11172A;
   display: flex;
   gap: 20%;
   height: 15dvh;
@@ -412,16 +412,16 @@ footer p {
 /* Extra Large Screens */
 @media screen and (min-width: 1600px) {
   .navbar {
-    background-color: var(--accent) !important;
+    background-color: #FAF8F5 !important;
   }
 
   .offcanvas-body {
-    background-color: var(--accent) !important;
+    background-color: transparent !important;
   }
 
   .nav-link:hover,
   .nav-link:focus {
     border-bottom: 1px solid var(--elem4);
-    color: var(--text);
+    color: #11172A;
   }
 }
