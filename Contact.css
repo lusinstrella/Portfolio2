@@ -57,7 +57,24 @@ nav.navbar.navbar-light,
   font-size: 1.2rem;
   font-family: var(--title-font);
   margin-top: 0;
-  transition: border-bottom 0.3s;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--elem2);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /* Mobile offcanvas nav links - light text on dark background */
@@ -65,10 +82,6 @@ nav.navbar.navbar-light,
   color: var(--text);
   margin-top: 0;
   padding: 1rem 1.5rem;
-}
-
-.nav-link:hover {
-  border-bottom: 2px solid var(--elem2);
 }
 
 .nav-link.active {
@@ -142,8 +155,15 @@ main {
   width: 100%;
   padding: 3rem;
   background-color: var(--card-bg);
+  border: 2px solid var(--accent);
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.contact-container:hover {
+  border-color: #E6D17B;
+  box-shadow: 0 15px 40px rgba(230, 209, 123, 0.3);
 }
 
 .contact-container h1 {
@@ -218,15 +238,16 @@ main {
   border: 2px solid #E6D17B;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .submit-btn:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background-color: var(--elem2);
+  color: var(--text);
+  border-color: var(--elem2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 .submit-btn:active {
@@ -264,7 +285,7 @@ main {
 .info-item i {
   font-size: 2rem;
   color: var(--bground);
-  transition: color 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .info-item a {
@@ -282,6 +303,7 @@ main {
 
 .info-item:hover i {
   color: #E6D17B;
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Footer Styles */

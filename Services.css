@@ -57,7 +57,24 @@ nav.navbar.navbar-light,
   font-size: 1.2rem;
   font-family: var(--title-font);
   margin-top: 0;
-  transition: border-bottom 0.3s;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--elem2);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /* Mobile offcanvas nav links - light text on dark background */
@@ -65,10 +82,6 @@ nav.navbar.navbar-light,
   color: var(--text);
   margin-top: 0;
   padding: 1rem 1.5rem;
-}
-
-.nav-link:hover {
-  border-bottom: 2px solid var(--elem2);
 }
 
 .nav-link.active {
@@ -161,10 +174,11 @@ nav.navbar.navbar-light,
 /* Service Cards */
 .service-card {
   background-color: var(--card-bg);
+  border: 2px solid var(--accent);
   border-radius: 12px;
   padding: 2.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -172,7 +186,8 @@ nav.navbar.navbar-light,
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #E6D17B;
+  box-shadow: 0 15px 40px rgba(230, 209, 123, 0.3);
 }
 
 /* Card Icon */
@@ -185,12 +200,12 @@ nav.navbar.navbar-light,
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .service-card:hover .card-icon {
   background-color: var(--elem2);
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(5deg);
 }
 
 .card-icon i {
@@ -255,6 +270,23 @@ nav.navbar.navbar-light,
   transition: all 0.3s ease;
   align-self: flex-start;
   border: 2px solid #E6D17B;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bground);
+  transition: left 0.3s ease;
+}
+
+.service-link:hover::before {
+  left: 0;
 }
 
 .service-link:hover {
@@ -302,16 +334,17 @@ nav.navbar.navbar-light,
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: 2px solid #E6D17B;
 }
 
 .cta-button:hover {
-  background-color: var(--bground);
-  color: #E6D17B;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--elem2);
+  color: var(--text);
+  border-color: var(--elem2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 /* Footer Styles */
