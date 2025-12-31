@@ -136,14 +136,14 @@
 
   .blurb{
     border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
+    color: #5A5D6B;
+    font-family: var(--body-font);
     font-size: 14px;
     margin-top: 8dvW;
     padding: 8%;
     text-wrap: pretty;
     width: 100dvw;
-  
+
   }
 
   .me {
@@ -231,14 +231,14 @@
 
   .blurb{
     border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
+    color: #5A5D6B;
+    font-family: var(--body-font);
     font-size: 16px;
     line-height: 2rem;
     padding: 8%;
     text-wrap: pretty;
     width: 50dvw;
-  
+
   }
 
   footer {
@@ -321,15 +321,15 @@
 
   .blurb{
     border-radius: 8px;
-    color: var(--text);
-    font-family: var(--title-font);
+    color: #5A5D6B;
+    font-family: var(--body-font);
     font-size: 18px;
     line-height: 2.5rem;
     margin-top: 1dvw;
     padding: 6%;
     text-wrap: pretty;
     width: 50dvw;
-  
+
   }
 
   footer {
