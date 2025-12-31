@@ -149,7 +149,7 @@ main {
 .contact-container h1 {
   font-family: var(--title-font);
   font-size: 2.5rem;
-  color: var(--text);
+  color: var(--bground);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -180,7 +180,7 @@ main {
 .form-group label {
   font-family: var(--title-font);
   font-size: 1.1rem;
-  color: var(--text);
+  color: var(--bground);
   font-weight: 500;
 }
 
@@ -243,7 +243,7 @@ main {
 .contact-info h2 {
   font-family: var(--title-font);
   font-size: 1.8rem;
-  color: var(--text);
+  color: var(--bground);
   margin-bottom: 1.5rem;
 }
 
@@ -263,14 +263,14 @@ main {
 
 .info-item i {
   font-size: 2rem;
-  color: var(--text);
+  color: var(--bground);
   transition: color 0.3s ease;
 }
 
 .info-item a {
   font-family: var(--body-font);
   font-size: 1.1rem;
-  color: var(--text);
+  color: #5A5D6B;
   text-decoration: none;
   transition: all 0.3s ease;
 }
