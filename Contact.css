@@ -212,9 +212,9 @@ main {
   font-family: var(--title-font);
   font-size: 1.2rem;
   padding: 1rem 2rem;
-  background-color: var(--accent);
-  color: var(--text);
-  border: none;
+  background-color: #E6D17B;
+  color: var(--bground);
+  border: 2px solid #E6D17B;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -222,7 +222,8 @@ main {
 }
 
 .submit-btn:hover {
-  background-color: var(--elem2);
+  background-color: var(--bground);
+  color: #E6D17B;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
@@ -274,12 +275,12 @@ main {
 }
 
 .info-item a:hover {
-  color: var(--elem2);
+  color: #E6D17B;
   text-decoration: underline;
 }
 
 .info-item:hover i {
-  color: var(--elem2);
+  color: #E6D17B;
 }
 
 /* Footer Styles */

@@ -243,20 +243,22 @@ nav.navbar.navbar-light,
 .service-link {
   font-family: var(--title-font);
   font-size: 1.1rem;
-  color: var(--text);
+  color: var(--bground);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: var(--elem1);
+  background-color: #E6D17B;
   border-radius: 8px;
   transition: all 0.3s ease;
   align-self: flex-start;
+  border: 2px solid #E6D17B;
 }
 
 .service-link:hover {
-  background-color: var(--elem2);
+  background-color: var(--bground);
+  color: #E6D17B;
   transform: translateX(5px);
 }
 
@@ -293,18 +295,20 @@ nav.navbar.navbar-light,
 .cta-button {
   font-family: var(--title-font);
   font-size: 1.3rem;
-  color: var(--text);
-  background-color: var(--accent);
+  color: var(--bground);
+  background-color: #E6D17B;
   padding: 1rem 3rem;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #E6D17B;
 }
 
 .cta-button:hover {
-  background-color: var(--elem2);
+  background-color: var(--bground);
+  color: #E6D17B;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }

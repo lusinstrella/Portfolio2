@@ -371,7 +371,7 @@ h3 {
 }
 
 .card-link {
-  color: var(--text);
+  color: #E6D17B;
   font-family: var(--title-font);
   font-size: 1.1rem;
   text-decoration: none;
@@ -381,8 +381,9 @@ h3 {
 }
 
 .card-link:hover {
-  color: var(--elem2);
-  border-bottom: 2px solid var(--elem2);
+  color: #E6D17B;
+  border-bottom: 2px solid #E6D17B;
+  transform: translateX(3px);
 }
 
 /* Main container */
@@ -404,17 +405,19 @@ main {
   font-family: var(--title-font);
   font-size: 1.2rem;
   padding: 1rem 3rem;
-  background-color: var(--accent);
-  color: var(--bground);
+  background-color: var(--bground);
+  color: #E6D17B;
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #E6D17B;
 }
 
 .cta-button:hover {
-  background-color: var(--elem2);
+  background-color: #E6D17B;
+  color: var(--bground);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   color: var(--text);
@@ -427,9 +430,9 @@ main {
   right: 2rem;
   width: 50px;
   height: 50px;
-  background-color: var(--accent);
-  color: var(--bground);
-  border: none;
+  background-color: var(--bground);
+  color: #E6D17B;
+  border: 2px solid #E6D17B;
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
@@ -449,7 +452,8 @@ main {
 }
 
 #back-to-top:hover {
-  background-color: var(--elem2);
+  background-color: #E6D17B;
+  color: var(--bground);
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
