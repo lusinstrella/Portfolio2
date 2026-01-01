@@ -292,7 +292,7 @@ h3 {
 
 .me {
   border-radius: 12px;
-  box-shadow: -30px -25px 0px #9CAF88;
+  box-shadow: -30px -25px 0px #11172A;
   height: auto;
   margin-left: 10dvw;
   max-width: 100%;
@@ -305,12 +305,12 @@ h3 {
 /* Skills Section start */
 
 .skills-grid {
-  list-style: decimal;
+  list-style: none;
   font-family: var(--body-font);
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--bground);
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
 .skill-badge {
