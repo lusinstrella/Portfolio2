@@ -207,7 +207,7 @@
   /* section-process end */
 
   h3 {
-    color: var(--text);
+    color: var(--bground);
     font-family: var(--body-font);
     font-size: 24px;
   }
@@ -230,7 +230,7 @@
     }
 
     h4 {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--title-font);
       margin-top: 1em;
      }
@@ -525,7 +525,7 @@
 
 
   a {
-    color: var(--text);
+    color: var(--bground);
     font-family: var(--body-font);
     font-size: 36px;
     margin-top: 2rem;
@@ -891,26 +891,26 @@
       width: 80dvw;}
   
     h2 {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 42px;
       margin-bottom: 2rem;
       align-self: flex-start;
       width: 25dvw;
-     
+
     }
 
     
   
     ol {
       align-self: flex-end;
-      color: var(--text);
+      color: var(--secondary-text);
       font-family: var(--body-font);
       line-height: 5rem;
       margin-top: -1rem;
       margin-bottom: 8rem;
       width: 60dvw;
-  
+
     }
 
     .process li {
@@ -942,14 +942,14 @@
     
 
     section p {
-      color: var(--text);
+      color: var(--secondary-text);
       font-family: var(--title-font);
       font-size: 18px;
       line-height: 2rem;
       padding: 4rem;
       width: 40dvw;
       text-wrap: balance;
-      
+
     }
 
     /* article {
@@ -960,7 +960,7 @@
     } */
 
     h3 {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 32px;
     }
@@ -968,7 +968,7 @@
 
 
     a {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 36px;
       margin-top: 2rem;
@@ -1015,7 +1015,7 @@
      }
 
      h4 {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--title-font);
       margin-bottom: -2rem;
       margin-left: -9rem;

@@ -289,20 +289,6 @@ nav.navbar.navbar-light,
   overflow: hidden;
 }
 
-.service-link::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background-color: var(--bground);
-  transition: left 0.3s ease;
-}
-
-.service-link:hover::before {
-  left: 0;
-}
 
 .service-link:hover {
   background-color: var(--elem2);
@@ -428,6 +414,7 @@ nav.navbar.navbar-light,
 .card-navy .service-link:hover {
   background: #E6D17B;
   color: var(--bground);
+  text-decoration: none;
 }
 
 /* ===========================================
