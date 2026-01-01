@@ -304,6 +304,10 @@ h3 {
 
 /* Skills Section start */
 
+.skills h1 {
+  margin-left: 0;
+}
+
 .skills-grid {
   list-style: none;
   font-family: var(--body-font);
