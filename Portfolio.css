@@ -505,12 +505,10 @@ h3 {
 }
 
 .card-navy .card-link:hover {
-  background-color: var(--text);
-  color: var(--bground);
-}
-
-.card-navy:hover .card-icon {
-  filter: drop-shadow(0 0 8px rgba(230, 209, 123, 0.5));
+  background-color: var(--secondary-accent);
+  color: var(--text);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
 /* Main container */
