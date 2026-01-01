@@ -20,11 +20,12 @@ html * {
 }
 
 body {
+  background: radial-gradient(farthest-corner circle at 0% 100%,
+      #C9A9A6 30%, #FAF8F5 30%);
   background-attachment: fixed;
-  background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-      #C9A9A6 40% 0%, #FAF8F5 -6% 76%);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: var(--body-font);
@@ -154,7 +155,7 @@ nav.navbar.navbar-light,
 .services-hero h1 {
   font-family: var(--title-font);
   font-size: 3rem;
-  color: var(--text);
+  color: var(--bground);
   margin-bottom: 1rem;
 }
 
@@ -162,17 +163,27 @@ nav.navbar.navbar-light,
   font-family: var(--body-font);
   font-size: 1.3rem;
   color: #5A5D6B;
+  font-style: italic;
   opacity: 1;
 }
 
 /* Services Container */
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   max-width: 1200px;
   margin: 4rem auto;
-  padding: 0 2rem;
+  padding: 0 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
 }
 
 /* Service Cards */
@@ -308,6 +319,173 @@ nav.navbar.navbar-light,
   transform: translateX(5px);
 }
 
+/* ===========================================
+   TRANSPARENT CARD (left - gradient shows through)
+   =========================================== */
+
+.card-transparent {
+  background: rgba(250, 248, 245, 0.75);
+  border: 2px solid var(--accent);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 15px rgba(201, 169, 166, 0.2);
+}
+
+.card-transparent:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(201, 169, 166, 0.3);
+  border-color: #E6D17B;
+  background: rgba(250, 248, 245, 0.9);
+}
+
+.card-transparent .card-icon {
+  background: var(--accent);
+}
+
+.card-transparent h2 {
+  color: var(--bground);
+}
+
+.card-transparent .description,
+.card-transparent .service-description {
+  color: var(--bground);
+}
+
+.card-transparent li,
+.card-transparent .service-features li {
+  color: var(--bground);
+}
+
+.card-transparent li::before,
+.card-transparent .service-features li::before {
+  color: #E6D17B;
+}
+
+.card-transparent .card-link,
+.card-transparent .service-link {
+  color: var(--bground);
+  border: 1px solid var(--bground);
+}
+
+.card-transparent .card-link:hover,
+.card-transparent .service-link:hover {
+  background: var(--bground);
+  color: var(--text);
+}
+
+/* ===========================================
+   NAVY CARD (middle)
+   =========================================== */
+
+.card-navy {
+  background: var(--bground);
+  border: 2px solid var(--bground);
+  box-shadow: 0 4px 15px rgba(17, 23, 42, 0.25);
+}
+
+.card-navy:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(17, 23, 42, 0.4);
+  border-color: #E6D17B;
+}
+
+.card-navy .card-icon {
+  background: #E6D17B;
+}
+
+.card-navy .card-icon i {
+  color: var(--bground);
+}
+
+.card-navy h2 {
+  color: var(--text);
+}
+
+.card-navy .description,
+.card-navy .service-description {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.card-navy li,
+.card-navy .service-features li {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.card-navy li::before,
+.card-navy .service-features li::before {
+  color: #E6D17B;
+}
+
+.card-navy .card-link,
+.card-navy .service-link {
+  color: #E6D17B;
+  border: 1px solid #E6D17B;
+  background-color: transparent;
+}
+
+.card-navy .card-link:hover,
+.card-navy .service-link:hover {
+  background: #E6D17B;
+  color: var(--bground);
+}
+
+/* ===========================================
+   CREAM CARD (right - solid)
+   =========================================== */
+
+.card-cream {
+  background: var(--text);
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(201, 169, 166, 0.15);
+}
+
+.card-cream:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(201, 169, 166, 0.25);
+  border-color: #E6D17B;
+}
+
+.card-cream .card-icon {
+  background: var(--accent);
+}
+
+.card-cream .card-icon i {
+  color: var(--text);
+}
+
+.card-cream h2 {
+  color: var(--bground);
+}
+
+.card-cream .description,
+.card-cream .service-description {
+  color: var(--bground);
+}
+
+.card-cream li,
+.card-cream .service-features li {
+  color: var(--bground);
+}
+
+.card-cream li::before,
+.card-cream .service-features li::before {
+  color: #E6D17B;
+}
+
+.card-cream .card-link,
+.card-cream .service-link {
+  color: var(--bground);
+  border: 1px solid var(--bground);
+  background-color: transparent;
+}
+
+.card-cream .card-link:hover,
+.card-cream .service-link:hover {
+  background: var(--bground);
+  color: var(--text);
+}
+
 /* CTA Section */
 .cta-section {
   text-align: center;
@@ -319,7 +497,7 @@ nav.navbar.navbar-light,
 .cta-section h2 {
   font-family: var(--title-font);
   font-size: 2.5rem;
-  color: var(--text);
+  color: var(--bground);
   margin-bottom: 1rem;
 }
 
@@ -332,24 +510,24 @@ nav.navbar.navbar-light,
 
 .cta-button {
   font-family: var(--title-font);
-  font-size: 1.3rem;
-  color: var(--bground);
-  background-color: #E6D17B;
-  padding: 1rem 3rem;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 15px 40px;
+  background: var(--bground);
+  color: var(--text);
   text-decoration: none;
+  border-radius: 8px;
   display: inline-block;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #E6D17B;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(17, 23, 42, 0.2);
+  border: 2px solid var(--bground);
 }
 
 .cta-button:hover {
-  background-color: var(--elem2);
-  color: var(--text);
-  border-color: var(--elem2);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
+  background: var(--accent);
+  color: var(--bground);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(201, 169, 166, 0.3);
 }
 
 /* Footer Styles */
@@ -388,10 +566,28 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .services-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+@media (max-width: 1000px) {
+  .services-container,
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card:nth-child(3) {
+    grid-column: span 2;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card:nth-child(3) {
+    grid-column: span 1;
+    max-width: none;
   }
 }
 
@@ -404,8 +600,8 @@ footer p {
     font-size: 1.1rem;
   }
 
-  .services-container {
-    grid-template-columns: 1fr;
+  .services-container,
+  .services-grid {
     gap: 2rem;
     padding: 0 1rem;
   }

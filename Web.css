@@ -211,10 +211,10 @@
 
   h3 {
 
-    color: var(--text);
+    color: var(--bground);
     font-family: var(--body-font);
     font-size: 24px;
-    
+
   }
   
 
@@ -496,11 +496,11 @@
       padding-bottom: 0.5rem;
       width: 100%;
     }
-    
+
 
 
     a {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 36px;
       margin-top: 2rem;
@@ -777,7 +777,7 @@
     
 
     section p {
-      color: var(--text);
+      color: var(--secondary-text);
       font-family: var(--title-font);
       font-size: 20px;
       line-height: 1.8;
@@ -797,19 +797,19 @@
     }
 
     h3 {
-      border-bottom: 1px solid var(--text);
-      color: var(--text);
+      border-bottom: 1px solid rgba(201, 169, 166, 0.3);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 36px;
       margin-bottom: 1.5rem;
       padding-bottom: 0.5rem;
       width: 100%;
     }
-    
+
 
 
     a {
-      color: var(--text);
+      color: var(--bground);
       font-family: var(--body-font);
       font-size: 36px;
       margin-top: 2rem;
@@ -904,8 +904,8 @@
     a:hover,
     a:focus {
       border-bottom: 1px solid var(--elem4);
-      color: var(--text);
-      
+      color: var(--secondary-accent);
+
     }
   
     #scrollToTopBtn {
