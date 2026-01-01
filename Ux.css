@@ -139,23 +139,23 @@
   }
 
   h1 {
-    color: var(--text);
-    font-family: var(--body-font);
+    color: var(--bground);
+    font-family: var(--title-font);
     font-size:32px;
     margin-bottom: 2rem;
     margin-right: 3rem;
     margin-top: 2rem;
-   
+
   }
 
   h2 {
-    color: var(--text);
-    font-family: var(--body-font);
+    color: var(--bground);
+    font-family: var(--title-font);
     font-size: 24px;
     margin-bottom: 2rem;
     align-self: flex-start;
     width: 30dvw;
-   
+
   }
 
   .process {
@@ -169,7 +169,7 @@
     width: 80dvw;}
 
   ol {
-    color: var(--text);
+    color: var(--secondary-text);
     font-family: var(--body-font);
     font-size: 20px;
     line-height: 2.5rem;
@@ -180,8 +180,8 @@
   }
 
   section p {
-    color: var(--text);
-    font-family: var(--title-font);
+    color: var(--secondary-text);
+    font-family: var(--body-font);
     font-size: 16px;
     line-height: 2rem;
     width: 80dvw;
@@ -190,7 +190,7 @@
   }
 
   .process li {
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid rgba(201, 169, 166, 0.3);
   }
 
   a {
@@ -449,20 +449,20 @@
     width: 80dvw;}
 
   h2 {
-    color: var(--text);
-    font-family: var(--body-font);
+    color: var(--bground);
+    font-family: var(--title-font);
     font-size: 42px;
     margin-bottom: 2rem;
     align-self: flex-start;
     width: 25dvw;
-   
+
   }
 
   
 
   ol {
     align-self: flex-end;
-    color: var(--text);
+    color: var(--secondary-text);
     font-family: var(--body-font);
     line-height: 5rem;
     margin-top: -1rem;
@@ -471,7 +471,7 @@
   }
 
   .process li {
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid rgba(201, 169, 166, 0.3);
   }
 
   .process li:hover,
@@ -499,14 +499,14 @@
   
 
   section p {
-    color: var(--text);
-    font-family: var(--title-font);
+    color: var(--secondary-text);
+    font-family: var(--body-font);
     font-size: 18px;
     line-height: 2rem;
     padding: 4rem;
     width: 40dvw;
     text-wrap: balance;
-    
+
   }
 
   /* article {
@@ -517,8 +517,8 @@
   } */
 
   h3 {
-    color: var(--text);
-    font-family: var(--body-font);
+    color: var(--bground);
+    font-family: var(--title-font);
     font-size: 32px;
   }
   

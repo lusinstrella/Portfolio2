@@ -166,6 +166,9 @@ nav.navbar.navbar-light,
 .jumbotron .container {
   text-align: center;
   max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -174,9 +177,12 @@ nav.navbar.navbar-light,
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.2;
   text-align: center;
   padding: 0;
+  width: 100%;
 }
 
 .hero-subtitle {
@@ -185,9 +191,12 @@ nav.navbar.navbar-light,
   font-size: clamp(1rem, 3vw, 1.5rem);
   margin-bottom: 0.5rem;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.4;
   text-align: center;
   padding: 0;
+  width: 100%;
 }
 
 .hero-tagline {
@@ -198,7 +207,10 @@ nav.navbar.navbar-light,
   line-height: 1.5;
   text-align: center;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+  width: 100%;
 }
 
 .lead {
@@ -415,6 +427,88 @@ h3 {
   box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
 }
 
+/* ===========================================
+   TRANSPARENT CARDS
+   Semi-transparent so gradient shows through
+   =========================================== */
+
+.card-transparent {
+  background-color: rgba(250, 248, 245, 0.75);
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(201, 169, 166, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.card-transparent:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(201, 169, 166, 0.3);
+  border-color: #E6D17B;
+  background-color: rgba(250, 248, 245, 0.9);
+}
+
+.card-transparent h3 {
+  color: var(--bground);
+}
+
+.card-transparent .card-link {
+  color: var(--bground);
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--bground);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: #E6D17B;
+}
+
+.card-transparent .card-link:hover {
+  background-color: var(--bground);
+  color: var(--text);
+}
+
+/* ===========================================
+   NAVY CARDS
+   =========================================== */
+
+.card-navy {
+  background-color: rgba(17, 23, 42, 0.85);
+  border: 2px solid var(--bground);
+  box-shadow: 0 4px 12px rgba(17, 23, 42, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.card-navy:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(17, 23, 42, 0.4);
+  border-color: #E6D17B;
+}
+
+.card-navy h3 {
+  color: var(--text);
+}
+
+.card-navy .card-link {
+  color: var(--bground);
+  font-family: var(--title-font);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #E6D17B;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: #E6D17B;
+}
+
+.card-navy .card-link:hover {
+  background-color: var(--text);
+  color: var(--bground);
+}
+
+.card-navy:hover .card-icon {
+  filter: drop-shadow(0 0 8px rgba(230, 209, 123, 0.5));
+}
+
 /* Main container */
 main {
   flex: 1 0 auto;
@@ -434,22 +528,20 @@ main {
   font-family: var(--title-font);
   font-size: 1.2rem;
   padding: 1rem 3rem;
-  background-color: #E6D17B;
-  color: var(--bground);
+  background-color: var(--bground);
+  color: var(--text);
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #E6D17B;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(17, 23, 42, 0.25);
 }
 
 .cta-button:hover {
-  background-color: var(--elem2);
-  color: var(--text);
-  border-color: var(--elem2);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(156, 175, 136, 0.3);
+  background-color: var(--accent);
+  color: var(--bground);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(17, 23, 42, 0.3);
 }
 
 /* Back to Top Button */
