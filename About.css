@@ -41,6 +41,10 @@
     .offcanvas-body {
       background-color: transparent !important;
     }
+
+    .nav-link {
+      color: #11172A !important;
+    }
   }
   
   .logo {
@@ -80,9 +84,9 @@
     padding: 1rem 1.5rem;
   }
 
-  .active {
+  .nav-link.active {
     border-bottom: 2px solid var(--elem2);
-    color: var(--text) !important;
+    color: var(--bground) !important;
     padding: 10px;
   }
 
