@@ -19,9 +19,9 @@
   }
 
   body {
+    background: radial-gradient(farthest-corner circle at 0% 100%,
+        #C9A9A6 30%, #FAF8F5 30%);
     background-attachment: fixed;
-    background-image: radial-gradient(farthest-corner circle at 0% 100% in oklab,
-        #C9A9A6 40% 0%, #FAF8F5 -6% 76%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -145,33 +145,229 @@
 
   /* Main Start */
 
-  main {
-    align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height:180dvh;
-  justify-content: center;
-  
-
+  /* Main content container */
+  .about-section {
+    padding: 120px 40px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
-  .blurb{
+  /* ===========================================
+     HERO: Photo + Intro
+     =========================================== */
+
+  .about-hero {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .photo-container {
+    flex: 0 0 auto;
+  }
+
+  .photo-wrapper {
+    position: relative;
+  }
+
+  .about-photo {
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
     border-radius: 8px;
-    color: #5A5D6B;
-    font-family: var(--body-font);
-    font-size: 14px;
-    margin-top: 8dvW;
-    padding: 8%;
-    text-wrap: pretty;
-    width: 100dvw;
-
+    border: 3px solid var(--accent);
+    position: relative;
+    z-index: 1;
   }
 
-  .me {
-    border-radius: 7px;
-    width: 80dvw;
-    opacity: 0.7;
+  .photo-offset {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--bground);
+    border-radius: 8px;
+    top: 15px;
+    left: 15px;
+    z-index: 0;
+  }
+
+  .intro-content {
+    flex: 1;
+    padding-top: 20px;
+  }
+
+  .intro-content h1 {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    color: var(--bground);
+    margin-bottom: 25px;
+  }
+
+  .intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--bground);
+    margin-bottom: 20px;
+  }
+
+  .intro-content .highlight {
+    color: var(--secondary-text);
+    font-style: italic;
+  }
+
+  /* ===========================================
+     HIGHLIGHT CARDS
+     =========================================== */
+
+  .highlights-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .highlight-card {
+    background: rgba(250, 248, 245, 0.8);
+    backdrop-filter: blur(4px);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-5px);
+    border-color: #E6D17B;
+  }
+
+  .highlight-card .card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+  }
+
+  .highlight-card .card-icon svg {
+    width: 60px;
+    height: 60px;
+    stroke: #E6D17B;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .highlight-card .card-icon svg .accent {
+    stroke: var(--accent);
+  }
+
+  .highlight-card h3 {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    color: var(--bground);
+    margin-bottom: 10px;
+  }
+
+  .highlight-card p {
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+    line-height: 1.6;
+  }
+
+  /* ===========================================
+     BEYOND THE SCREEN SECTION
+     =========================================== */
+
+  .beyond-section {
+    background: var(--bground);
+    border-radius: 12px;
+    padding: 40px 50px;
+    margin-bottom: 60px;
+  }
+
+  .beyond-section h2 {
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  .beyond-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text);
+    opacity: 0.9;
+  }
+
+  .beyond-section p + p {
+    margin-top: 15px;
+  }
+
+  /* ===========================================
+     CTA SECTION
+     =========================================== */
+
+  .cta-section {
+    text-align: center;
+    padding: 40px 20px 80px;
+  }
+
+  .cta-section h2 {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    color: var(--bground);
+    margin-bottom: 15px;
+  }
+
+  .cta-section p {
+    color: var(--secondary-text);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .cta-button {
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    padding: 15px 40px;
+    background: var(--bground);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(17, 23, 42, 0.2);
+  }
+
+  .cta-button:hover {
+    background: var(--accent);
+    color: var(--bground);
+    transform: translateY(-3px);
+  }
+
+  /* ===========================================
+     RESPONSIVE
+     =========================================== */
+
+  @media (max-width: 900px) {
+    .about-hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .intro-content {
+      padding-top: 0;
+    }
+
+    .highlights-section {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .beyond-section {
+      padding: 30px;
+    }
   }
 
   /* Footer */
@@ -234,34 +430,6 @@
       background-color: transparent !important;
     }
 
-    main {
-        align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height:160dvh;
-      justify-content: center;
-}
-
-.me {
-    border-radius: 8px;
-    margin-top: 10dvh;
-    width: 35dvw;
-    opacity: 0.7;
-  }
-
-  .blurb{
-    border-radius: 8px;
-    color: #5A5D6B;
-    font-family: var(--body-font);
-    font-size: 16px;
-    line-height: 2rem;
-    padding: 8%;
-    text-wrap: pretty;
-    width: 50dvw;
-
-  }
-
   footer {
     align-items: center;
     background-color: #11172A;
@@ -322,35 +490,6 @@
     .offcanvas-body {
       background-color: transparent !important;
     }
-
-    main {
-        align-items: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height:160dvh;
-      justify-content: center;
-}
-
-.me {
-    border-radius: 8px;
-    margin-top: 10dvh;
-    width: 30dvw;
-    opacity: 0.6;
-  }
-
-  .blurb{
-    border-radius: 8px;
-    color: #5A5D6B;
-    font-family: var(--body-font);
-    font-size: 18px;
-    line-height: 2.5rem;
-    margin-top: 1dvw;
-    padding: 6%;
-    text-wrap: pretty;
-    width: 50dvw;
-
-  }
 
   footer {
     align-items: center;

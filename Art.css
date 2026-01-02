@@ -98,7 +98,7 @@
   
   
   .navbar {
-    background-color: #11172A !important;
+    background-color: #FAF8F5 !important;
     width: 100dvw;
   }
   
@@ -107,8 +107,19 @@
     max-width: 150px;
   }
 
+  /* Ensure offcanvas doesn't affect navbar on desktop */
+  @media (min-width: 992px) {
+    .offcanvas-body {
+      background-color: transparent !important;
+    }
+
+    .nav-link {
+      color: #11172A !important;
+    }
+  }
+
   .nav-link {
-    color: #FAF8F5;
+    color: #11172A;
     font-size: 1.2rem;
     font-family: var(--title-font);
     margin-top: 0;
@@ -140,7 +151,8 @@
   }
 
   .nav-link.active {
-    border-bottom: 2px solid var(--text);
+    border-bottom: 2px solid var(--elem2);
+    color: var(--bground) !important;
   }
 
   .offcanvas-body {
@@ -148,12 +160,12 @@
   }
   
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23F9F8F3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2311172A' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 
   .navbar-toggler {
-    border-color: #F9F8F3;
-    color: #F9F8F3;
+    border-color: #11172A;
+    color: #11172A;
   }
   
   .offcanvas-header {
@@ -256,12 +268,12 @@ img {
 @media screen and (min-width: 1026px) and (max-width: 1440px) {
 
     .navbar {
-      background-color: #11172A !important;
+      background-color: #FAF8F5 !important;
       height: 15dvh;
     }
 
     .offcanvas-body {
-      background-color: #11172A !important;
+      background-color: transparent !important;
     }
 
   body {
@@ -346,11 +358,11 @@ img {
 
 
     .navbar {
-      background-color: #11172A !important;
+      background-color: #FAF8F5 !important;
     }
 
     .offcanvas-body {
-      background-color: #11172A !important;
+      background-color: transparent !important;
     }
 
     body {
