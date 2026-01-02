@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web design and development portfolio by Fulvia Serra. Custom websites built with HTML, CSS, and JavaScript.">
+    <meta name="description" content="[PROJECT NAME] - A web design case study by Fulvia Serra">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Portfolio - Fulvia Serra | Web Designer & Developer</title>
+    <title>[PROJECT NAME] | Fulvia Serra</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -22,17 +22,13 @@
     <link rel="stylesheet" href="Web.css">
 </head>
 
-
-
-
 <body>
-    <a id="top"></a>
     <header>
-      
+
           <!--Navbar Start -->
-          <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top">
+          <nav class="navbar navbar-light navbar-expand-lg fixed-top">
             <div class="container-fluid">
-              <a href="index.html" class="no-hover">
+              <a href="index.html">
                 <img src="Images/logo-transparent-png 2.png" class="logo" alt="logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -64,95 +60,71 @@
               </div>
             </div>
           </nav>
-
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Portfolio</h1>
-      <p class="hero-subtitle">Custom websites built from scratch with care and craft</p>
-    </section>
+    <main class="project-detail">
 
-    <!-- Main Portfolio Section -->
-    <main class="portfolio-section">
-      <div class="portfolio-grid">
+      <!-- Back Link -->
+      <a href="Web.html" class="back-link">← Back to Portfolio</a>
 
-        <!-- Project 1: Aroma Coffee - TRANSPARENT -->
-        <article class="project-card card-transparent">
-          <div class="project-image">
-            <img src="Images/Aroma-Mockup1.png" alt="Aroma Coffee Roasters website">
-          </div>
-          <div class="project-content">
-            <h2>Aroma Coffee Roasters</h2>
-            <p class="description">A warm, inviting website for a local coffee roaster — designed to evoke the aroma and comfort of their craft.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="aroma-detail.html" class="project-link">View Project →</a>
-              <a href="https://lusinstrella.github.io/Aroma-Repo/" class="external-link" target="_blank">Live Site ↗</a>
-            </div>
-          </div>
-        </article>
+      <!-- Project Hero -->
+      <section class="detail-hero">
+        <h1>[PROJECT NAME]</h1>
+        <p class="detail-subtitle">[ONE LINE DESCRIPTION]</p>
+        <div class="detail-meta">
+          <span class="meta-item"><strong>Role:</strong> [ROLE]</span>
+          <span class="meta-item"><strong>Year:</strong> [YEAR]</span>
+          <span class="meta-item"><strong>Tech:</strong> [TECH STACK]</span>
+        </div>
+        <div class="detail-links">
+          <a href="[LIVE SITE URL]" class="detail-cta-primary" target="_blank">Visit Live Site ↗</a>
+          <a href="[GITHUB URL]" class="detail-cta-secondary" target="_blank">View Code</a>
+        </div>
+      </section>
 
-        <!-- Project 2: Karl Dukstein - NAVY -->
-        <article class="project-card card-navy">
-          <div class="project-image">
-            <img src="Images/Karl-Mockup.png" alt="Karl Dukstein Photography website">
-          </div>
-          <div class="project-content">
-            <h2>Karl Dukstein Photography</h2>
-            <p class="description">A bold, minimalist portfolio showcasing nature and street photography — where every image tells a story.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="karl-detail.html" class="project-link">View Project →</a>
-              <a href="#" class="external-link" target="_blank">Live Site ↗</a>
-            </div>
-          </div>
-        </article>
+      <!-- Project Overview -->
+      <section class="detail-overview">
+        <h2>Overview</h2>
+        <p>[OVERVIEW PARAGRAPH 1]</p>
+        <p>[OVERVIEW PARAGRAPH 2]</p>
+      </section>
 
-        <!-- Project 3: Elizabeth McFeely - TRANSPARENT -->
-        <article class="project-card card-transparent">
-          <div class="project-image">
-            <img src="Images/Elizabeth-Mockup.png" alt="Elizabeth McFeely Photography website">
-          </div>
-          <div class="project-content">
-            <h2>Elizabeth McFeely Photography</h2>
-            <p class="description">An elegant, visual-first portfolio for a wedding photographer — designed to let the work shine.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="elizabeth-detail.html" class="project-link">View Project →</a>
-              <a href="#" class="external-link" target="_blank">Live Site ↗</a>
-            </div>
-          </div>
-        </article>
+      <!-- Project Highlights -->
+      <section class="detail-highlights">
+        <div class="highlight-item">
+          <h3>[HIGHLIGHT 1 TITLE]</h3>
+          <p>[HIGHLIGHT 1 DESCRIPTION]</p>
+        </div>
+        <div class="highlight-item">
+          <h3>[HIGHLIGHT 2 TITLE]</h3>
+          <p>[HIGHLIGHT 2 DESCRIPTION]</p>
+        </div>
+        <div class="highlight-item">
+          <h3>[HIGHLIGHT 3 TITLE]</h3>
+          <p>[HIGHLIGHT 3 DESCRIPTION]</p>
+        </div>
+      </section>
 
-      </div>
+      <!-- Project Gallery -->
+      <section class="detail-gallery">
+        <img src="[IMAGE 1]" alt="[ALT TEXT 1]">
+        <img src="[IMAGE 2]" alt="[ALT TEXT 2]">
+        <img src="[IMAGE 3]" alt="[ALT TEXT 3]">
+        <img src="[IMAGE 4]" alt="[ALT TEXT 4]">
+      </section>
 
-      <!-- CTA Section -->
-      <section class="cta">
-        <h2>Have a project in mind?</h2>
-        <p>Let's build something beautiful together.</p>
+      <!-- Project CTA -->
+      <section class="detail-cta">
+        <h2>Interested in working together?</h2>
+        <p>Let's create something beautiful.</p>
         <a href="Contact.html" class="cta-button">Get in Touch</a>
       </section>
 
     </main>
 
-
        <!--Footer start -->
        <footer>
         <div class="linked">
-           
        <a href="https://www.linkedin.com/in/fulviaserra/" target="_blank">
        <i class="fa-brands fa-linkedin-in" style="color: #E6D17B;"></i></a>
        <p>Follow me</p>
@@ -172,6 +144,5 @@
 
       <!--Java Script -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
-      <script src="script.js" defer></script>
     </body>
 </html>
