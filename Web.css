@@ -240,7 +240,7 @@ body {
    =========================================== */
 
 .card-transparent {
-  background: rgba(250, 248, 245, 0.8);
+  background: rgba(250, 248, 245, 0.7);
   border: 2px solid var(--accent);
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 15px rgba(201, 169, 166, 0.2);
@@ -288,8 +288,8 @@ body {
    =========================================== */
 
 .card-navy {
-  background: var(--bground);
-  border: 2px solid var(--bground);
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid rgba(17, 23, 42, 0.9);
   box-shadow: 0 4px 15px rgba(17, 23, 42, 0.25);
 }
 
