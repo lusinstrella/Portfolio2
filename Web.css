@@ -236,101 +236,151 @@ body {
 }
 
 /* ===========================================
-   TRANSPARENT CARD (1st and 3rd)
+   AROMA CARD (green #4c6d58)
    =========================================== */
 
-.card-transparent {
-  background: rgba(250, 248, 245, 0.7);
-  border: 2px solid var(--accent);
+.card-aroma {
+  background: rgba(76, 109, 88, 0.8);
+  border: 2px solid rgba(76, 109, 88, 0.9);
   backdrop-filter: blur(4px);
-  box-shadow: 0 4px 15px rgba(201, 169, 166, 0.2);
+  box-shadow: 0 4px 15px rgba(76, 109, 88, 0.3);
 }
 
-.card-transparent:hover {
-  box-shadow: 0 12px 30px rgba(201, 169, 166, 0.3);
+.card-aroma:hover {
+  box-shadow: 0 12px 30px rgba(76, 109, 88, 0.4);
   border-color: #E6D17B;
 }
 
-.card-transparent .project-content h2 {
-  color: var(--bground);
-}
-
-.card-transparent .project-content .description {
-  color: var(--bground);
-}
-
-.card-transparent .tech-tag {
-  background: rgba(201, 169, 166, 0.3);
-  color: var(--bground);
-}
-
-.card-transparent .project-link {
-  background: transparent;
-  color: var(--bground);
-  border: 1px solid var(--bground);
-}
-
-.card-transparent .project-link:hover {
-  background: var(--bground);
+.card-aroma .project-content h2 {
   color: var(--text);
 }
 
-.card-transparent .external-link {
-  color: var(--secondary-text);
-}
-
-.card-transparent .external-link:hover {
-  color: var(--bground);
-}
-
-/* ===========================================
-   NAVY CARD (middle)
-   =========================================== */
-
-.card-navy {
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid rgba(17, 23, 42, 0.9);
-  box-shadow: 0 4px 15px rgba(17, 23, 42, 0.25);
-}
-
-.card-navy:hover {
-  box-shadow: 0 12px 30px rgba(17, 23, 42, 0.4);
-  border-color: #E6D17B;
-}
-
-.card-navy .project-content h2 {
+.card-aroma .project-content .description {
   color: var(--text);
+  opacity: 0.95;
 }
 
-.card-navy .project-content .description {
-  color: var(--text);
-  opacity: 0.9;
-}
-
-.card-navy .tech-tag {
+.card-aroma .tech-tag {
   background: rgba(230, 209, 123, 0.2);
   color: #E6D17B;
 }
 
-.card-navy .project-link {
+.card-aroma .project-link {
   background: transparent;
   color: #E6D17B;
   border: 1px solid #E6D17B;
 }
 
-.card-navy .project-link:hover {
+.card-aroma .project-link:hover {
   background: #E6D17B;
   color: var(--bground);
 }
 
-.card-navy .external-link {
+.card-aroma .external-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-aroma .external-link:hover {
+  color: #E6D17B;
+}
+
+/* ===========================================
+   KARL CARD (dark gray #262525)
+   =========================================== */
+
+.card-karl {
+  background: rgba(38, 37, 37, 0.85);
+  border: 2px solid rgba(38, 37, 37, 0.9);
+  box-shadow: 0 4px 15px rgba(38, 37, 37, 0.3);
+}
+
+.card-karl:hover {
+  box-shadow: 0 12px 30px rgba(38, 37, 37, 0.4);
+  border-color: #E6D17B;
+}
+
+.card-karl .project-content h2 {
+  color: var(--text);
+}
+
+.card-karl .project-content .description {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.card-karl .tech-tag {
+  background: rgba(230, 209, 123, 0.2);
+  color: #E6D17B;
+}
+
+.card-karl .project-link {
+  background: transparent;
+  color: #E6D17B;
+  border: 1px solid #E6D17B;
+}
+
+.card-karl .project-link:hover {
+  background: #E6D17B;
+  color: var(--bground);
+}
+
+.card-karl .external-link {
   color: var(--text);
   opacity: 0.7;
 }
 
-.card-navy .external-link:hover {
+.card-karl .external-link:hover {
   opacity: 1;
   color: #E6D17B;
+}
+
+/* ===========================================
+   ELIZABETH CARD (light gray #C0BFBF)
+   =========================================== */
+
+.card-elizabeth {
+  background: rgba(192, 191, 191, 0.8);
+  border: 2px solid rgba(192, 191, 191, 0.9);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 15px rgba(192, 191, 191, 0.3);
+}
+
+.card-elizabeth:hover {
+  box-shadow: 0 12px 30px rgba(192, 191, 191, 0.4);
+  border-color: #E6D17B;
+}
+
+.card-elizabeth .project-content h2 {
+  color: var(--bground);
+}
+
+.card-elizabeth .project-content .description {
+  color: var(--bground);
+  opacity: 0.95;
+}
+
+.card-elizabeth .tech-tag {
+  background: rgba(76, 109, 88, 0.3);
+  color: var(--bground);
+}
+
+.card-elizabeth .project-link {
+  background: transparent;
+  color: var(--bground);
+  border: 1px solid var(--bground);
+}
+
+.card-elizabeth .project-link:hover {
+  background: var(--bground);
+  color: var(--text);
+}
+
+.card-elizabeth .external-link {
+  color: var(--secondary-text);
+}
+
+.card-elizabeth .external-link:hover {
+  color: var(--bground);
 }
 
 /* ===========================================
