@@ -78,7 +78,7 @@ nav.navbar.navbar-light,
 }
 
 .logo:hover .logo-text {
-  color: var(--accent);
+  color: var(--secondary-accent);
   transition: color 0.3s ease;
 }
 
