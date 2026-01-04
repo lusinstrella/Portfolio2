@@ -198,6 +198,46 @@
   }
   /* Navbar End */
 
+  /* ===========================================
+     PHOTOGRAPHY PAGE INTRO
+     =========================================== */
+
+  .photo-intro {
+    max-width: 600px;
+    margin: 80px auto 60px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .photo-intro h1 {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    color: var(--bground);
+    margin-bottom: 20px;
+  }
+
+  .photo-intro p {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary-text);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .photo-intro {
+      margin: 60px auto 40px;
+    }
+
+    .photo-intro h1 {
+      font-size: 2rem;
+    }
+
+    .photo-intro p {
+      font-size: 1rem;
+    }
+  }
+
   /* main start */
 
   body {
