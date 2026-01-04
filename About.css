@@ -47,9 +47,34 @@
     }
   }
   
+  /* Logo styles */
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
     margin-left: 2rem;
-    max-width: 150px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    color: var(--bground);
+  }
+
+  .logo:hover .logo-icon {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover .logo-text {
+    color: var(--accent);
+    transition: color 0.3s ease;
   }
   
   .nav-link {
