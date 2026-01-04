@@ -289,8 +289,8 @@ body {
    =========================================== */
 
 .card-karl {
-  background: rgba(38, 37, 37, 0.85);
-  border: 2px solid rgba(38, 37, 37, 0.9);
+  background: #262525;
+  border: 2px solid #262525;
   box-shadow: 0 4px 15px rgba(38, 37, 37, 0.3);
 }
 
@@ -339,9 +339,8 @@ body {
    =========================================== */
 
 .card-elizabeth {
-  background: rgba(192, 191, 191, 0.8);
-  border: 2px solid rgba(192, 191, 191, 0.9);
-  backdrop-filter: blur(4px);
+  background: #C0BFBF;
+  border: 2px solid #C0BFBF;
   box-shadow: 0 4px 15px rgba(192, 191, 191, 0.3);
 }
 
