@@ -577,6 +577,16 @@ footer p {
   margin: 0;
 }
 
+.linked,
+.mail,
+.resume {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1000px) {
   .services-container,
