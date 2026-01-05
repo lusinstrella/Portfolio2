@@ -340,11 +340,11 @@ footer {
   align-items: center;
   background-color: #11172A;
   display: flex;
-  gap: 20%;
-  height: 15dvh;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-top: 4rem;
-  width: 100dvw;
+  padding: 4rem 2rem;
+  width: 100%;
 }
 
 footer div {
